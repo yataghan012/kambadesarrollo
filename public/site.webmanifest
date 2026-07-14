@@ -1,0 +1,21 @@
+{
+  "name": "Kamba Imports",
+  "short_name": "Kamba",
+  "description": "Especialistas en importaciones de Ciudad del Este a Argentina de forma segura y personalizada.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B0F19",
+  "theme_color": "#0B0F19",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

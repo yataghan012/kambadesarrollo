@@ -1,0 +1,95 @@
+import { Head } from "vite-react-ssg";
+import { SITE_URL, getWhatsAppLink } from "../../config";
+import { trackWhatsAppClick } from "../../lib/analytics";
+import { Link } from "react-router-dom";
+
+export default function HardwareMineria() {
+  return (
+    <>
+      <Head>
+        <title>Hardware y Minería - Kamba Imports</title>
+        <meta name="description" content="Notebooks de alta gama, placas de video y rigs para minería al mejor precio. Garantía oficial en Hardware y Minería." />
+        <link rel="canonical" href={`${SITE_URL}/productos/hardware-mineria`} />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": "Hardware y Minería",
+            "description": "Equipamiento de computación de alto rendimiento: placas de video RTX, procesadores, motherboards y notebooks premium para gamers, creadores de contenido y minería.",
+            "offers": {
+              "@type": "AggregateOffer",
+              "priceCurrency": "USD",
+              "lowPrice": "300",
+              "offerCount": "3",
+              "priceRange": "$$$"
+            }
+          })}
+        </script>
+        <meta property="og:title" content="Hardware y Minería - Kamba Imports" />
+        <meta property="og:description" content="Notebooks de alta gama, placas de video y rigs para minería al mejor precio. Garantía oficial en Hardware y Minería." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={`${SITE_URL}/productos/hardware-mineria`} />
+        <meta property="og:image" content={`${SITE_URL}/ogimage.png`} />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Head>
+
+      <div className="max-w-5xl mx-auto px-6 md:px-12 py-16 md:py-24">
+        <Link to="/productos" className="text-xs uppercase tracking-widest font-bold border-b border-ink pb-1 hover:opacity-50 transition-opacity mb-12 inline-block">
+          Volver a Categorías
+        </Link>
+        
+        <div className="flex flex-col md:flex-row gap-16 items-start">
+          <div className="md:w-1/2 w-full">
+            <div className="aspect-square bg-gray-100 overflow-hidden flex items-center justify-center relative border border-ink/10">
+              <img 
+                src="/productos/pchardware.webp" 
+                alt="Hardware & Minería" 
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                referrerPolicy="no-referrer"
+              />
+            </div>
+          </div>
+          
+          <div className="md:w-1/2">
+            <h1 className="text-4xl md:text-5xl font-serif tracking-tight mb-6">
+              Hardware y Minería
+            </h1>
+            
+            <p className="text-xl font-light text-ink/80 mb-8 leading-relaxed">
+              Equipamiento de alto rendimiento. Placas de video, procesadores, motherboards y notebooks para gamers, profesionales y minería, directo de los mejores distribuidores.
+            </p>
+
+            <div className="border border-ink/10 bg-white/50 p-8 rounded-sm mb-12">
+              <h3 className="text-xs uppercase tracking-widest font-bold mb-4 italic">Precios de Referencia</h3>
+              <p className="font-light opacity-80 mb-4 text-sm">Una referencia de ahorro comprando directamente conmigo:</p>
+              <ul className="space-y-3">
+                <li className="flex justify-between items-baseline border-b border-ink/10 pb-2">
+                  <span className="font-serif italic text-lg">NVIDIA RTX 4090</span>
+                  <span className="text-[10px] font-sans opacity-60 uppercase">[PLACEHOLDER: precio de referencia]</span>
+                </li>
+                <li className="flex justify-between items-baseline border-b border-ink/10 pb-2">
+                  <span className="font-serif italic text-lg">Notebook ASUS ROG Strix</span>
+                  <span className="text-[10px] font-sans opacity-60 uppercase">[PLACEHOLDER: precio de referencia]</span>
+                </li>
+                <li className="flex justify-between items-baseline border-b border-ink/10 pb-2">
+                  <span className="font-serif italic text-lg">Rig de Minería (armado)</span>
+                  <span className="text-[10px] font-sans opacity-60 uppercase">[PLACEHOLDER: precio de referencia]</span>
+                </li>
+              </ul>
+              <p className="text-[10px] uppercase tracking-wider opacity-50 mt-6">*Los precios varían diariamente según cotización del dólar y stock del proveedor.</p>
+            </div>
+
+            <a
+              onClick={() => trackWhatsAppClick('product_page')} href={getWhatsAppLink("Hola! Quiero consultar por componentes de hardware o minería.")}
+              className="inline-block bg-ink text-paper px-8 py-4 rounded-full text-sm font-semibold hover:bg-black transition-colors w-full text-center md:w-auto"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Consultar stock y cotización
+            </a>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}

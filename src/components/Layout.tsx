@@ -115,7 +115,7 @@ export default function Layout() {
               {/* Redes Sociales */}
               <div className="mt-8 flex flex-col gap-4">
                 <span className="text-[10px] uppercase tracking-wider block opacity-50 font-bold">Redes Oficiales</span>
-                <div className="flex gap-6 text-[11px] uppercase tracking-widest font-bold items-center flex-wrap">
+                <div className="flex gap-6 text-xs uppercase tracking-widest font-bold items-center flex-wrap">
                   <a href="https://www.facebook.com/profile.php?id=61583082507604" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity flex items-center gap-1.5 text-[#1877F2]" title="Facebook Oficial">
                     <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                       <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
@@ -136,7 +136,7 @@ export default function Layout() {
 
             {/* Columna 2: Navegación */}
             <div className="lg:col-span-2 flex flex-col">
-              <h4 className="text-[11px] uppercase tracking-widest font-bold opacity-40 mb-4">Explorá</h4>
+              <h4 className="text-xs uppercase tracking-widest font-bold opacity-40 mb-4">Explorá</h4>
               <nav className="flex flex-col gap-3 text-xs uppercase tracking-widest font-semibold">
                 <Link to="/como-funciona" className="hover:opacity-60 transition-opacity">Cómo Funciona</Link>
                 <Link to="/productos" className="hover:opacity-60 transition-opacity">Productos</Link>
@@ -147,7 +147,7 @@ export default function Layout() {
 
             {/* Columna 3: Recursos de compras */}
             <div className="lg:col-span-3 flex flex-col">
-              <h4 className="text-[11px] uppercase tracking-widest font-bold opacity-40 mb-4">Recursos Útiles</h4>
+              <h4 className="text-xs uppercase tracking-widest font-bold opacity-40 mb-4">Recursos Útiles</h4>
               <nav className="flex flex-col gap-3 text-[11px] font-semibold text-ink/80">
                 <a 
                   href="https://www.comprasparaguay.com.ar" 
@@ -182,7 +182,7 @@ export default function Layout() {
                   Atacado Connect (Computación) ↗
                 </a>
                 <div className="pt-2 border-t border-ink/5 mt-1 flex flex-col gap-1.5">
-                  <span className="text-[9px] uppercase tracking-wider block opacity-40">Influencers CDE</span>
+                  <span className="text-[9px] uppercase tracking-wider block opacity-40">Vloggers CDE</span>
                   <div className="flex gap-3">
                     <a 
                       href="https://www.instagram.com/modojuanchi/" 
@@ -207,7 +207,7 @@ export default function Layout() {
 
             {/* Columna 4: Contacto / Reunión */}
             <div className="lg:col-span-3 flex flex-col">
-              <h4 className="text-[11px] uppercase tracking-widest font-bold opacity-40 mb-4">Contacto Directo</h4>
+              <h4 className="text-xs uppercase tracking-widest font-bold opacity-40 mb-4">Contacto Directo</h4>
               <div className="space-y-4">
                 <div>
                   <span className="text-[10px] uppercase tracking-wider block opacity-50 mb-1">WhatsApp / Llamadas</span>
@@ -242,7 +242,7 @@ export default function Layout() {
           href={getWhatsAppLink("Hola! Vengo de la página web de Kamba Imports y quiero hacer una consulta.")}
           target="_blank"
           rel="noopener noreferrer"
-          className="fixed bottom-6 right-6 bg-accent text-paper font-sans text-[11px] uppercase tracking-widest font-bold px-6 py-4 rounded-full shadow-lg hover:bg-ink transition-colors z-50 flex items-center gap-2"
+          className="fixed bottom-6 right-6 bg-accent text-paper font-sans text-xs uppercase tracking-widest font-bold px-6 py-4 rounded-full shadow-lg hover:bg-ink transition-colors z-50 flex items-center gap-2"
         >
           WhatsApp
         </a>

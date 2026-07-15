@@ -34,7 +34,7 @@ export default function Bebidas() {
       </Head>
 
       <div className="max-w-5xl mx-auto px-6 md:px-12 py-16 md:py-24">
-        <Link to="/productos" className="text-xs uppercase tracking-widest font-bold border-b border-ink pb-1 hover:opacity-50 transition-opacity mb-12 inline-block">
+        <Link to="/productos" className="text-sm uppercase tracking-widest font-bold border-b border-ink pb-1 hover:opacity-50 transition-opacity mb-12 inline-block">
           Volver a Categorías
         </Link>
         
@@ -60,23 +60,24 @@ export default function Bebidas() {
             </p>
 
             <div className="border border-ink/10 bg-white/50 p-8 rounded-sm mb-12">
-              <h3 className="text-xs uppercase tracking-widest font-bold mb-4 italic">Precios de Referencia</h3>
-              <p className="font-light opacity-80 mb-4 text-sm">Una referencia de ahorro comprando directamente conmigo:</p>
+              <h3 className="text-sm uppercase tracking-widest font-bold mb-4 italic">Precios de Referencia</h3>
+              <p className="font-light opacity-80 mb-4 text-sm">Para que te des una idea de lo que podés encontrar en bebidas originales en Ciudad del Este, precio:</p>
               <ul className="space-y-3">
                 <li className="flex justify-between items-baseline border-b border-ink/10 pb-2">
                   <span className="font-serif italic text-lg">Johnnie Walker Blue Label</span>
-                  <span className="text-[10px] font-sans opacity-60 uppercase">[PLACEHOLDER: precio de referencia]</span>
+                  <span className="text-sm font-sans font-bold opacity-80">$ 180</span>
                 </li>
                 <li className="flex justify-between items-baseline border-b border-ink/10 pb-2">
                   <span className="font-serif italic text-lg">The Macallan 18 Years</span>
-                  <span className="text-[10px] font-sans opacity-60 uppercase">[PLACEHOLDER: precio de referencia]</span>
+                  <span className="text-sm font-sans font-bold opacity-80">$520</span>
                 </li>
                 <li className="flex justify-between items-baseline border-b border-ink/10 pb-2">
-                  <span className="font-serif italic text-lg">Louis XIII Cognac</span>
-                  <span className="text-[10px] font-sans opacity-60 uppercase">[PLACEHOLDER: precio de referencia]</span>
+                  <span className="font-serif italic text-lg">Dom Pérignon 2015</span>
+                  <span className="text-sm font-sans font-bold opacity-80">$350</span>
                 </li>
               </ul>
               <p className="text-[10px] uppercase tracking-wider opacity-50 mt-6">*Los precios varían diariamente según cotización del dólar y stock del proveedor.</p>
+              <p className="text-[10px] uppercase tracking-wider opacity-50 mt-2">*El precio por bulto es fijo.</p>
             </div>
 
             <a

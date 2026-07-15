@@ -30,16 +30,16 @@ const SLIDES = [
 ];
 
 const LOGO_IMAGES = [
-  { src: "/logos/nissei.jpg", alt: "Nissei" },
+  { src: "/logos/nissei.avif", alt: "Nissei" },
   { src: "/logos/cellshop.png", alt: "Cellshop" },
   { src: "/logos/MEGA.png", alt: "Mega Eletrónicos" },
   { src: "/logos/atacado.avif", alt: "Atacado Games" },
-  { src: "/logos/casaamericana.jpg", alt: "Casa Americana" },
-  { src: "/logos/flytec.webp", alt: "Flytec" },
+  { src: "/logos/casaamericana.avif", alt: "Casa Americana" },
+  { src: "/logos/flytec.avif", alt: "Flytec" },
   { src: "/logos/madridcenter.svg", alt: "Madrid Center" },
   { src: "/logos/newzone.svg", alt: "New Zone" },
   { src: "/logos/pontocom.png", alt: "Ponto Com" },
-  { src: "/logos/shoppingchina.webp", alt: "Shopping China" },
+  { src: "/logos/shoppingchina.avif", alt: "Shopping China" },
   { src: "/logos/asm.png", alt: "ASM" }
 ];
 
@@ -373,10 +373,11 @@ export default function Home() {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
 
-      {/* Hero */}
-      <section className="relative px-6 md:px-12 py-16 md:py-28 border-b border-ink/10 overflow-hidden">
-        {/* Video Background */}
-        <div className="absolute inset-0 z-0">
+      <div className="flex flex-col h-[calc(100vh-81px)] md:h-[calc(100vh-105px)]">
+        {/* Hero */}
+        <section className="relative px-6 md:px-12 py-16 md:py-28 flex flex-col justify-end flex-grow border-b border-ink/10 overflow-hidden">
+          {/* Video Background */}
+          <div className="absolute inset-0 z-0">
           <video
             key={videoSrc || "loading"}
             autoPlay
@@ -397,7 +398,7 @@ export default function Home() {
             )}
           </video>
           {/* Overlay to ensure text legibility */}
-          <div className="absolute inset-0 bg-paper/60 backdrop-blur-[2px]"></div>
+          <div className="absolute inset-0 bg-paper/45"></div>
         </div>
 
         <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
@@ -426,7 +427,7 @@ export default function Home() {
       </section>
 
       {/* Rotating Stores Marquee */}
-      <section className="border-b border-ink/10 bg-white/60 py-1.5 md:py-2 relative">
+      <section className="border-b border-ink/10 bg-white/60 py-3 md:py-4 relative shrink-0">
         <div className="relative w-full overflow-hidden">
           {/* Mask gradients for smooth seamless edge fading */}
           <div className="absolute inset-y-0 left-0 w-8 md:w-16 bg-gradient-to-r from-paper to-transparent z-10 pointer-events-none"></div>
@@ -445,19 +446,19 @@ export default function Home() {
             onTouchMove={handleMarqueeTouchMove}
             onTouchEnd={handleMarqueeMouseUpOrLeave}
             onMouseEnter={() => { isMarqueeHoveredRef.current = true; }}
-            className={`flex gap-12 md:gap-16 items-center overflow-x-hidden select-none px-8 md:px-16 ${
+            className={`flex gap-12 md:gap-16 items-center overflow-hidden select-none px-8 md:px-16 ${
               isMarqueeDraggingState ? "cursor-grabbing" : "cursor-grab"
             }`}
           >
             {[...LOGO_IMAGES, ...LOGO_IMAGES, ...LOGO_IMAGES].map((logo, i) => {
-              const isCasaAmericana = logo.src.includes("casaamericana.jpg");
+              const isCasaAmericana = logo.src.includes("casaamericana.avif");
               const isPontoCom = logo.src.includes("pontocom.png");
               
-              let sizingClass = "h-6 md:h-8";
+              let sizingClass = "h-5 md:h-6";
               if (isCasaAmericana) {
-                sizingClass = "h-10 md:h-12 scale-105";
+                sizingClass = "h-8 md:h-10 scale-105";
               } else if (isPontoCom) {
-                sizingClass = "h-6 md:h-8 scale-[2] origin-center mx-4";
+                sizingClass = "h-5 md:h-6 scale-[2] origin-center mx-4";
               }
 
               return (
@@ -474,6 +475,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      </div>
 
       {/* Trust Bar */}
       <section className="px-6 md:px-12 py-8 border-b border-ink/10">
@@ -499,13 +501,13 @@ export default function Home() {
       <section className="py-10 md:py-14 px-6 md:px-12 border-b border-ink/10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           <div className="lg:col-span-6">
-            <h2 className="text-xs uppercase tracking-widest font-bold mb-2 italic">¿Cómo funciona?</h2>
+            <h2 className="text-sm uppercase tracking-widest font-bold mb-2 italic">¿Cómo funciona?</h2>
             <p className="text-3xl font-serif">Un proceso simple de tres pasos.</p>
             <p className="text-sm font-light leading-relaxed opacity-70 mt-3 mb-6 max-w-md">
               Hacemos posible que consigas productos auténticos directamente de los distribuidores oficiales en Paraguay. Comprás desde Argentina con absoluta tranquilidad y acompañamiento total.
             </p>
             <div>
-              <Link to="/como-funciona" className="text-xs uppercase tracking-widest font-bold border-b border-ink pb-1 hover:opacity-50 transition-opacity">
+              <Link to="/como-funciona" className="text-sm uppercase tracking-widest font-bold border-b border-ink pb-1 hover:opacity-50 transition-opacity">
                 Ver el detalle completo del proceso
               </Link>
             </div>
@@ -580,7 +582,7 @@ export default function Home() {
       {/* Productos */}
       <section className="py-16 md:py-24 px-6 md:px-12 border-b border-ink/10">
         <div className="mb-12">
-          <h2 className="text-xs uppercase tracking-widest font-bold mb-2 italic">Lo más buscado</h2>
+          <h2 className="text-sm uppercase tracking-widest font-bold mb-2 italic">Lo más buscado</h2>
           <p className="text-3xl font-serif max-w-xl">Acceso a las marcas más buscadas en el mundo a precios accesibles.</p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -662,7 +664,7 @@ export default function Home() {
       {/* Tabla de precios (Placeholder) */}
       <section className="py-16 md:py-24 px-6 md:px-12 border-b border-ink/10">
         <div className="mb-8">
-          <h2 className="text-xs uppercase tracking-widest font-bold mb-2 italic">+ INVERSIÓN + AHORRO</h2>
+          <h2 className="text-sm uppercase tracking-widest font-bold mb-2 italic">+ INVERSIÓN + AHORRO</h2>
           <p className="text-sm uppercase tracking-widest font-bold text-accent">⚠️ EL COSTO POR BULTO ES FIJO</p>
         </div>
         <div className="border border-ink/10 bg-white/50">
@@ -703,7 +705,7 @@ export default function Home() {
 
       {/* Testimonios */}
       <section className="py-16 md:py-24 px-6 md:px-12 border-b border-ink/10">
-        <h2 className="text-xs uppercase tracking-widest font-bold mb-12 italic">Lo que dicen los clientes</h2>
+        <h2 className="text-sm uppercase tracking-widest font-bold mb-12 italic">Lo que dicen los clientes</h2>
         <div className="grid md:grid-cols-3 gap-8">
           <div className="p-6 bg-ink text-paper rounded-sm">
             <p className="text-lg italic font-serif leading-snug mb-6 opacity-90">"Necesitaba un Motorola Signature para un regalo para mi hija y no quería arriesgarme a comprar por mi cuenta. Tomás, que era un local de CDE me lo consiguió, sellado y original, y me lo entregó antes de la fecha que habíamos hablado. Ya voy a repetir para otros equipos."</p>
@@ -725,32 +727,37 @@ export default function Home() {
       </section>
 
       {/* Quién está detrás - Resumen */}
-      <section className="py-16 md:py-24 px-6 md:px-12 border-b border-ink/10 grid md:grid-cols-12 gap-12 items-center">
-        <div className="md:col-span-4 lg:col-span-3">
-          <div className="aspect-[3/4] bg-gray-200 overflow-hidden flex items-center justify-center relative border border-ink/10">
-            <img 
-              src="/phoyo.jpg" 
-              alt="Quién está detrás de Kamba Imports" 
-              className="w-full h-full object-cover"
-              referrerPolicy="no-referrer"
-            />
+      <section className="py-16 md:py-24 px-6 md:px-12 border-b border-ink/10">
+        <div className="max-w-5xl mx-auto grid md:grid-cols-12 gap-8 lg:gap-16 items-center">
+          <div className="md:col-span-5 lg:col-span-4 relative group">
+            {/* Marco offset (decoración) */}
+            <div className="absolute inset-0 border border-ink/20 translate-x-3 translate-y-3 md:translate-x-4 md:translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-500"></div>
+            
+            <div className="aspect-[3/4] bg-paper overflow-hidden relative border border-ink/10 shadow-sm relative z-10">
+              <img 
+                src="/phoyo.jpg" 
+                alt="Quién está detrás de Kamba Imports" 
+                className="w-full h-full object-cover grayscale opacity-90 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700 scale-105 group-hover:scale-100"
+                referrerPolicy="no-referrer"
+              />
+            </div>
           </div>
-        </div>
-        <div className="md:col-span-8 lg:col-span-9">
-          <h2 className="text-xs uppercase tracking-widest font-bold mb-4 italic">Hola, soy la persona detrás de Kamba Imports</h2>
-          <p className="text-2xl font-serif font-light leading-relaxed mb-8 max-w-3xl">
-            No somos una corporación anónima. Viví acá, me conozco todos los shoppings y galerías, hago esto hace 1 año y me encargo personalmente de revisar cada producto antes de que te llegue. Si hay algún inconveniente con el producto, lo resuelvo personalmente con los negocios, trabajamos seriamente. Sé cómo se mueve la zona y uso esa experiencia para que vos compres tranquilo, desde tu casa.
-          </p>
-          <Link to="/quien-esta-detras" className="inline-block bg-ink text-paper px-8 py-4 rounded-full text-sm font-semibold hover:bg-black transition-colors">
-            Conocé más de mi historia
-          </Link>
+          <div className="md:col-span-7 lg:col-span-8 text-center md:text-left flex flex-col items-center md:items-start">
+            <h2 className="text-sm uppercase tracking-widest font-bold mb-4 italic">Hola, soy la persona detrás de Kamba Imports</h2>
+            <p className="text-xl lg:text-2xl font-serif font-light leading-relaxed mb-8 max-w-3xl mx-auto md:mx-0">
+              No somos una corporación anónima. Viví acá, me conozco todos los shoppings y galerías, hago esto hace 1 año y me encargo personalmente de revisar cada producto antes de que te llegue. Si hay algún inconveniente con el producto, lo resuelvo personalmente con los negocios, trabajamos seriamente. Sé cómo se mueve la zona y uso esa experiencia para que vos compres tranquilo, desde tu casa.
+            </p>
+            <Link to="/quien-esta-detras" className="inline-block bg-ink text-paper px-8 py-4 rounded-full text-sm font-semibold hover:bg-black transition-colors">
+              Conocé más de mi historia
+            </Link>
+          </div>
         </div>
       </section>
 
       {/* FAQ Corta */}
-      <section className="py-16 md:py-24 px-6 md:px-12">
-        <h2 className="text-xs uppercase tracking-widest font-bold mb-12 italic">Preguntas Frecuentes</h2>
-        <div className="max-w-4xl space-y-8">
+      <section className="py-16 md:py-24 px-6 md:px-12 flex flex-col items-center">
+        <h2 className="text-sm uppercase tracking-widest font-bold mb-12 italic text-center">Preguntas Frecuentes</h2>
+        <div className="max-w-4xl w-full space-y-8 text-left">
           <div className="border-t border-ink/10 pt-6">
             <h3 className="font-serif text-xl mb-3">¿Los productos son originales?</h3>
             <p className="text-sm font-light leading-relaxed opacity-80">Sí. Compro únicamente en las tiendas oficiales y distribuidores autorizados de Ciudad del Este. Soy cliente de: Nissei, FlyTech, CellShop, Shopping China, Casa Americana, Madrid Center, Mega Electrónicos, Atacado Connect, Elegancia, ASM, Ponto.com, New Zone Importados y tengo contactos por todo el centro de CDE. Cada artículo viene sellado y con su factura de compra original, manteniendo intacta la garantía de fábrica.</p>
@@ -760,12 +767,12 @@ export default function Home() {
             <p className="text-sm font-light leading-relaxed opacity-80">Una vez hecha la compra, me encargo de embalarlo con material de embalaje para su seguridad y se despacha a través de encomienda dentro de Argentina directamente hacia tu domicilio o sucursal más cercana. Trabajo con Via Cargo, Correo Argentino, OCA, Central Argentino, Andreani y por avión en el día "Aerolíneas Argentinas Cargo"</p>
           </div>
           <div className="border-t border-ink/10 pt-6">
-            <h3 className="font-serif text-xl mb-3">¿Qué pasa con el tema aduanero?</h3> 
-            <p className="text-sm font-light leading-relaxed opacity-80">Cada operación tiene sus particularidades según el producto y el momento. Mis envios nunca tuvieron conflicto alguno con la aduana. Te invito a que hablemos en profundidad sobre este tema mediante un encuentro 1 a 1 via zoom o presencialmente para esclarecer todo tipo de duda y para que yo pueda aprender más sobre que necesitas comprar. Definimos juntos para que la compra sea viable y sin sorpresas.</p>
+            <h3 className="font-serif text-xl mb-3">¿Qué pasa con el tema aduanero?</h3>
+             <p className="text-sm font-light leading-relaxed opacity-80">Cada operación tiene sus particularidades según el producto y el momento. Mis envios nunca tuvieron conflicto alguno con la aduana. Te invito a que hablemos en profundidad sobre este tema mediante un encuentro 1 a 1 via zoom o presencialmente para esclarecer todo tipo de duda y para que yo pueda aprender más sobre que necesitas comprar. Definimos juntos para que la compra sea viable y sin sorpresas.</p>
           </div>
         </div>
-        <div className="mt-12">
-          <Link to="/legalidad-y-aduana" className="text-xs uppercase tracking-widest font-bold border-b border-ink pb-1 hover:opacity-50 transition-opacity">
+        <div className="mt-12 text-center">
+          <Link to="/legalidad-y-aduana" className="text-sm uppercase tracking-widest font-bold border-b border-ink pb-1 hover:opacity-50 transition-opacity">
             Leer más sobre Aduana y Legalidad
           </Link>
         </div>

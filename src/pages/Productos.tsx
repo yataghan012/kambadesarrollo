@@ -46,7 +46,7 @@ export default function Productos() {
               <p className="text-sm font-light opacity-80 mb-6 leading-relaxed">
                 Apple, Samsung, Lenovo, marcas líderes. Todos los equipos con garantía oficial.
               </p>
-              <span className="text-xs uppercase tracking-widest font-bold border-b border-ink pb-1 opacity-70 group-hover:opacity-100 transition-opacity">Ver detalles</span>
+              <span className="text-sm uppercase tracking-widest font-bold border-b border-ink pb-1 opacity-70 group-hover:opacity-100 transition-opacity">Ver detalles</span>
             </div>
           </Link>
 
@@ -67,7 +67,7 @@ export default function Productos() {
               <p className="text-sm font-light opacity-80 mb-6 leading-relaxed">
                 Smartwatches and relojes analógicos de primeras marcas, 100% auténticos.
               </p>
-              <span className="text-xs uppercase tracking-widest font-bold border-b border-ink pb-1 opacity-70 group-hover:opacity-100 transition-opacity">Ver detalles</span>
+              <span className="text-sm uppercase tracking-widest font-bold border-b border-ink pb-1 opacity-70 group-hover:opacity-100 transition-opacity">Ver detalles</span>
             </div>
           </Link>
 
@@ -88,7 +88,7 @@ export default function Productos() {
               <p className="text-sm font-light opacity-80 mb-6 leading-relaxed">
                 PlayStation, Nintendo y Xbox originales directamente en caja sellada con garantía.
               </p>
-              <span className="text-xs uppercase tracking-widest font-bold border-b border-ink pb-1 opacity-70 group-hover:opacity-100 transition-opacity">Ver detalles</span>
+              <span className="text-sm uppercase tracking-widest font-bold border-b border-ink pb-1 opacity-70 group-hover:opacity-100 transition-opacity">Ver detalles</span>
             </div>
           </Link>
 
@@ -109,7 +109,7 @@ export default function Productos() {
               <p className="text-sm font-light opacity-80 mb-6 leading-relaxed">
                 Notebooks de alta gama, placas de video y rigs para minería al mejor precio.
               </p>
-              <span className="text-xs uppercase tracking-widest font-bold border-b border-ink pb-1 opacity-70 group-hover:opacity-100 transition-opacity">Ver detalles</span>
+              <span className="text-sm uppercase tracking-widest font-bold border-b border-ink pb-1 opacity-70 group-hover:opacity-100 transition-opacity">Ver detalles</span>
             </div>
           </Link>
 
@@ -130,7 +130,7 @@ export default function Productos() {
               <p className="text-sm font-light opacity-80 mb-6 leading-relaxed">
                 Sony, Canon y Nikon. Cuerpos, lentes y accesorios para profesionales.
               </p>
-              <span className="text-xs uppercase tracking-widest font-bold border-b border-ink pb-1 opacity-70 group-hover:opacity-100 transition-opacity">Ver detalles</span>
+              <span className="text-sm uppercase tracking-widest font-bold border-b border-ink pb-1 opacity-70 group-hover:opacity-100 transition-opacity">Ver detalles</span>
             </div>
           </Link>
 
@@ -151,13 +151,13 @@ export default function Productos() {
               <p className="text-sm font-light opacity-80 mb-6 leading-relaxed">
                 Ediciones exclusivas (+$100usd): Johnnie Walker Blue Label, The Macallan, Louis XIII, etc.
               </p>
-              <span className="text-xs uppercase tracking-widest font-bold border-b border-ink pb-1 opacity-70 group-hover:opacity-100 transition-opacity">Ver detalles</span>
+              <span className="text-sm uppercase tracking-widest font-bold border-b border-ink pb-1 opacity-70 group-hover:opacity-100 transition-opacity">Ver detalles</span>
             </div>
           </Link>
         </div>
 
         <div className="mt-24 border-t border-ink/10 pt-16 flex flex-col items-start max-w-3xl">
-          <h3 className="text-xs uppercase tracking-widest font-bold mb-4 italic">¿Buscás algo que no está en la lista?</h3>
+          <h3 className="text-sm uppercase tracking-widest font-bold mb-4 italic">¿Buscás algo que no está en la lista?</h3>
           <p className="text-xl font-light text-ink/80 mb-8">
             Si necesitás algún artículo específico que no entra en estas categorías, consultame. Averiguo disponibilidad y cotización.
           </p>

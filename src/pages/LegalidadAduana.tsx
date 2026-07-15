@@ -84,7 +84,7 @@ export default function LegalidadAduana() {
               <div>
                 <a
                   onClick={() => trackWhatsAppClick('legalidad')} href={getWhatsAppLink("Hola! Vengo de la página web y tengo una consulta sobre el proceso de aduana e importación.")}
-                  className="text-xs uppercase tracking-widest font-bold border-b border-ink pb-1 hover:opacity-50 transition-opacity"
+                  className="text-sm uppercase tracking-widest font-bold border-b border-ink pb-1 hover:opacity-50 transition-opacity"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

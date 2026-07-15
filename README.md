@@ -24,9 +24,18 @@ Al usar `vite-react-ssg`, las rutas se renderizarán como archivos HTML estátic
 ### `npm run lint`
 Verifica que no haya errores de TypeScript en el proyecto utilizando `tsc --noEmit`.
 
-## Despliegue (Deploy)
+## Despliegue en Cloudflare Pages y Variables de Entorno
 
 El proyecto está preparado para ser hospedado en un servidor de archivos estáticos (como GitHub Pages, Vercel, Netlify, o Cloudflare Pages) gracias al uso de SSG. Simplemente sube la carpeta `dist` resultante después de ejecutar `npm run build`.
+
+### Analytics y Meta Pixel
+
+El código ya está configurado para inyectar Google Analytics y Meta Pixel. Para que funcionen en tu entorno de producción (ej: Cloudflare Pages), debes añadir las siguientes variables de entorno en la configuración de tu plataforma **antes de que se ejecute el build**:
+
+- `VITE_GA_MEASUREMENT_ID`: Tu ID de medición de Google Analytics (ej. `G-XXXXXXXXXX`).
+- `VITE_META_PIXEL_ID`: El ID de tu Meta Pixel.
+
+Como Vite inyecta estas variables durante el proceso de compilación (`npm run build`), asegúrate de configurarlas en el panel de Cloudflare Pages (en *Settings > Environment Variables*).
 
 ## Estructura
 

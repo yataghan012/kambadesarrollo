@@ -29,7 +29,7 @@ export default function Bebidas() {
         <meta property="og:description" content="Ediciones exclusivas de +$100usd: Johnnie Walker Blue Label, The Macallan, Louis XIII." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={`${SITE_URL}/productos/bebidas`} />
-        <meta property="og:image" content={`${SITE_URL}/ogimage.png`} />
+        <meta property="og:image" content={`${SITE_URL}/ogimage.webp`} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
 
@@ -42,7 +42,7 @@ export default function Bebidas() {
           <div className="md:w-1/2 w-full">
             <div className="aspect-square bg-gray-100 overflow-hidden flex items-center justify-center relative border border-ink/10">
               <img 
-                src="/productos/bebidas.png" 
+                src="/productos/bebidas.webp" 
                 alt="Bebidas Premium" 
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 referrerPolicy="no-referrer"

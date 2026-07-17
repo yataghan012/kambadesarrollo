@@ -162,7 +162,7 @@ export default function ComoFunciona() {
         <meta property="og:description" content="Enterate cómo importar de Ciudad del Este paso a paso. Un proceso simple, claro y sin vueltas desde la cotización hasta la puerta de tu casa." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={`${SITE_URL}/como-funciona`} />
-        <meta property="og:image" content={`${SITE_URL}/ogimage.png`} />
+        <meta property="og:image" content={`${SITE_URL}/ogimage.webp`} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
 

@@ -14,7 +14,7 @@ export default function QuienEstaDetras() {
         <meta property="og:description" content="Conocé mi historia, cómo llegué a Ciudad del Este y por qué decidí armar Kamba Imports para ayudarte a comprar de forma segura." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={`${SITE_URL}/quien-esta-detras`} />
-        <meta property="og:image" content={`${SITE_URL}/ogimage.png`} />
+        <meta property="og:image" content={`${SITE_URL}/ogimage.webp`} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
 

@@ -29,7 +29,7 @@ export default function Camaras() {
         <meta property="og:description" content="Sony, Canon y Nikon. Cuerpos, lentes y accesorios para profesionales al mejor precio." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={`${SITE_URL}/productos/camaras`} />
-        <meta property="og:image" content={`${SITE_URL}/ogimage.png`} />
+        <meta property="og:image" content={`${SITE_URL}/ogimage.webp`} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
 
@@ -42,7 +42,7 @@ export default function Camaras() {
           <div className="md:w-1/2 w-full">
             <div className="aspect-square bg-gray-100 overflow-hidden flex items-center justify-center relative border border-ink/10">
               <img 
-                src="/productos/camarascanon.png" 
+                src="/productos/camarascanon.webp" 
                 alt="Cámaras Profesionales" 
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 referrerPolicy="no-referrer"

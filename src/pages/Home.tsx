@@ -381,7 +381,7 @@ export default function Home() {
         <meta property="og:description" content="Descubrí cómo importar productos de Paraguay a Argentina de forma segura y personalizada. Especialistas en Ciudad del Este con envíos a Argentina." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={`${SITE_URL}`} />
-        <meta property="og:image" content={`${SITE_URL}/ogimage.png`} />
+        <meta property="og:image" content={`${SITE_URL}/ogimage.webp`} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
 
@@ -488,7 +488,7 @@ export default function Home() {
 
               return (
                 <div key={`logo-${i}`} className="shrink-0 flex items-center justify-center">
-                  <img
+                  <img loading="lazy"
                     src={logo.src}
                     alt={logo.alt}
                     className={`${sizingClass} w-auto object-contain mix-blend-multiply opacity-85 hover:opacity-100 transition-opacity duration-300 pointer-events-none`}
@@ -547,7 +547,7 @@ export default function Home() {
                 >
                   {SLIDES.map((slide, idx) => (
                     <div key={idx} className="w-full h-full flex-shrink-0 relative">
-                      <img 
+                      <img loading="lazy" 
                         src={slide.image} 
                         alt={slide.alt}
                         className="w-full h-full object-cover select-none cursor-zoom-in transition-all duration-500 hover:scale-[1.03]"
@@ -613,7 +613,7 @@ export default function Home() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <Link to="/productos/celulares-notebooks" className="group block border border-ink/10 rounded-sm p-4 hover:border-ink/30 transition-colors bg-white/50">
             <div className="aspect-[4/3] bg-gray-100 overflow-hidden flex items-center justify-center text-ink/40 text-xs mb-6 relative border border-ink/5">
-              <img 
+              <img loading="lazy" 
                 src="/productos/celularesmayorista.jpg" 
                 alt="Celulares y Notebooks" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -625,7 +625,7 @@ export default function Home() {
           </Link>
           <Link to="/productos/relojes" className="group block border border-ink/10 rounded-sm p-4 hover:border-ink/30 transition-colors bg-white/50">
             <div className="aspect-[4/3] bg-gray-100 overflow-hidden flex items-center justify-center text-ink/40 text-xs mb-6 relative border border-ink/5">
-              <img 
+              <img loading="lazy" 
                 src="/productos/relojgarminmayorista.jpg" 
                 alt="Relojes" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -637,7 +637,7 @@ export default function Home() {
           </Link>
           <Link to="/productos/consolas" className="group block border border-ink/10 rounded-sm p-4 hover:border-ink/30 transition-colors bg-white/50">
             <div className="aspect-[4/3] bg-gray-100 overflow-hidden flex items-center justify-center text-ink/40 text-xs mb-6 relative border border-ink/5">
-              <img 
+              <img loading="lazy" 
                 src="/productos/ps5.jpg" 
                 alt="Consolas" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -649,7 +649,7 @@ export default function Home() {
           </Link>
           <Link to="/productos/hardware-mineria" className="group block border border-ink/10 rounded-sm p-4 hover:border-ink/30 transition-colors bg-white/50">
             <div className="aspect-[4/3] bg-gray-100 overflow-hidden flex items-center justify-center text-ink/40 text-xs mb-6 relative border border-ink/5">
-              <img 
+              <img loading="lazy" 
                 src="/productos/pchardware.webp" 
                 alt="Hardware & Minería" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -661,8 +661,8 @@ export default function Home() {
           </Link>
           <Link to="/productos/camaras" className="group block border border-ink/10 rounded-sm p-4 hover:border-ink/30 transition-colors bg-white/50">
             <div className="aspect-[4/3] bg-gray-100 overflow-hidden flex items-center justify-center text-ink/40 text-xs mb-6 relative border border-ink/5">
-              <img 
-                src="/productos/camarascanon.png" 
+              <img loading="lazy" 
+                src="/productos/camarascanon.webp" 
                 alt="Cámaras Profesionales" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 referrerPolicy="no-referrer"
@@ -673,8 +673,8 @@ export default function Home() {
           </Link>
           <Link to="/productos/bebidas" className="group block border border-ink/10 rounded-sm p-4 hover:border-ink/30 transition-colors bg-white/50">
             <div className="aspect-[4/3] bg-gray-100 overflow-hidden flex items-center justify-center text-ink/40 text-xs mb-6 relative border border-ink/5">
-              <img 
-                src="/productos/bebidas.png" 
+              <img loading="lazy" 
+                src="/productos/bebidas.webp" 
                 alt="Bebidas Premium" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 referrerPolicy="no-referrer"
@@ -759,7 +759,7 @@ export default function Home() {
             <div className="absolute inset-0 border border-ink/20 translate-x-3 translate-y-3 md:translate-x-4 md:translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-500"></div>
             
             <div className="aspect-[3/4] bg-paper overflow-hidden relative border border-ink/10 shadow-sm relative z-10">
-              <img 
+              <img loading="lazy" 
                 src="/phoyo.jpg" 
                 alt="Quién está detrás de Kamba Imports" 
                 className="w-full h-full object-cover grayscale opacity-90 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700 scale-105 group-hover:scale-100"
@@ -889,7 +889,7 @@ export default function Home() {
               onTouchMove={handleTouchMove}
               onTouchEnd={handleMouseUp}
             >
-              <img
+              <img loading="lazy"
                 src={SLIDES[lightboxIndex].image}
                 alt={SLIDES[lightboxIndex].alt}
                 style={{

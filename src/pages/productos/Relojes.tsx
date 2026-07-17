@@ -29,7 +29,7 @@ export default function Relojes() {
         <meta property="og:description" content="Encontrá relojes originales Ciudad del Este a un precio competitivo. Smartwatches y relojería de marcas de primer nivel." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={`${SITE_URL}/productos/relojes`} />
-        <meta property="og:image" content={`${SITE_URL}/ogimage.png`} />
+        <meta property="og:image" content={`${SITE_URL}/ogimage.webp`} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
 

@@ -103,6 +103,7 @@ export default function Layout() {
                 <Link to="/" id="footer-logo-link" className="block mb-4">
                   <img 
                     id="footer-logo-img"
+                    loading="lazy"
                     src="/logo.png" 
                     alt="Kamba Imports" 
                     className="h-7 w-auto object-contain hover:opacity-85 transition-opacity"

@@ -14,7 +14,7 @@ export default function Productos() {
         <meta property="og:description" content="Accedé a productos originales Ciudad del Este con la tranquilidad de que compramos en distribuidores oficiales. Conocé nuestras categorías." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={`${SITE_URL}/productos`} />
-        <meta property="og:image" content={`${SITE_URL}/ogimage.png`} />
+        <meta property="og:image" content={`${SITE_URL}/ogimage.webp`} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
 
@@ -96,6 +96,7 @@ export default function Productos() {
           <Link to="/productos/hardware-mineria" className="group block border border-ink/10 rounded-sm p-4 hover:border-ink/30 transition-colors bg-white/50">
             <div className="aspect-[4/3] bg-gray-100 overflow-hidden flex items-center justify-center text-ink/40 text-xs mb-6 relative border border-ink/5">
               <img 
+                loading="lazy"
                 src="/productos/pchardware.webp" 
                 alt="Hardware & Minería" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -117,7 +118,8 @@ export default function Productos() {
           <Link to="/productos/camaras" className="group block border border-ink/10 rounded-sm p-4 hover:border-ink/30 transition-colors bg-white/50">
             <div className="aspect-[4/3] bg-gray-100 overflow-hidden flex items-center justify-center text-ink/40 text-xs mb-6 relative border border-ink/5">
               <img 
-                src="/productos/camarascanon.png" 
+                loading="lazy"
+                src="/productos/camarascanon.webp" 
                 alt="Cámaras Fotográficas" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 referrerPolicy="no-referrer"
@@ -138,7 +140,8 @@ export default function Productos() {
           <Link to="/productos/bebidas" className="group block border border-ink/10 rounded-sm p-4 hover:border-ink/30 transition-colors bg-white/50">
             <div className="aspect-[4/3] bg-gray-100 overflow-hidden flex items-center justify-center text-ink/40 text-xs mb-6 relative border border-ink/5">
               <img 
-                src="/productos/bebidas.png" 
+                loading="lazy"
+                src="/productos/bebidas.webp" 
                 alt="Bebidas Premium" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 referrerPolicy="no-referrer"

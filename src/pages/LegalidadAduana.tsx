@@ -14,7 +14,7 @@ export default function LegalidadAduana() {
         <meta property="og:description" content="Entendé el contexto sobre la aduana Ciudad del Este Argentina. Información clara sobre si es legal importar de Paraguay y cómo lo manejamos." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={`${SITE_URL}/legalidad-y-aduana`} />
-        <meta property="og:image" content={`${SITE_URL}/ogimage.png`} />
+        <meta property="og:image" content={`${SITE_URL}/ogimage.webp`} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
 

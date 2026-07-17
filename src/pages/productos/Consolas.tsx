@@ -29,7 +29,7 @@ export default function Consolas() {
         <meta property="og:description" content="Elegí entre las mejores consolas de videojuegos originales de Ciudad del Este. PlayStation, Nintendo y Xbox con garantía y asesoramiento." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={`${SITE_URL}/productos/consolas`} />
-        <meta property="og:image" content={`${SITE_URL}/ogimage.png`} />
+        <meta property="og:image" content={`${SITE_URL}/ogimage.webp`} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
 

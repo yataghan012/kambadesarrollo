@@ -29,7 +29,7 @@ export default function CelularesNotebooks() {
         <meta property="og:description" content="Las mejores marcas del mercado en telefonía y computación. Equipos originales Apple, Samsung, Lenovo y más, con garantía de fábrica." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={`${SITE_URL}/productos/celulares-notebooks`} />
-        <meta property="og:image" content={`${SITE_URL}/ogimage.png`} />
+        <meta property="og:image" content={`${SITE_URL}/ogimage.webp`} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
 

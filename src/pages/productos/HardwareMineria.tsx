@@ -29,7 +29,7 @@ export default function HardwareMineria() {
         <meta property="og:description" content="Notebooks de alta gama, placas de video y rigs para minería al mejor precio. Garantía oficial en Hardware y Minería." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={`${SITE_URL}/productos/hardware-mineria`} />
-        <meta property="og:image" content={`${SITE_URL}/ogimage.png`} />
+        <meta property="og:image" content={`${SITE_URL}/ogimage.webp`} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
 

@@ -13,44 +13,69 @@ export default function Bebidas() {
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "CollectionPage",
-            "name": "Bebidas Premium",
-            "description": "Botellas de edición limitada y maltas exclusivas de las destilerías más prestigiosas del mundo como Johnnie Walker Blue Label, The Macallan 18 y Louis XIII Cognac.",
-            "mainEntity": {
-              "@type": "ItemList",
-              "itemListElement": [
-                {
-                  "@type": "ListItem",
-                  "position": 1,
-                  "item": {
-                    "@type": "Product",
-                    "name": "Johnnie Walker Blue Label 750ml",
-                    "offers": {
-                      "@type": "Offer",
-                      "priceCurrency": "USD",
-                      "price": "160",
-                      "availability": "https://schema.org/InStock",
-                      "seller": { "@type": "Organization", "name": "Kamba Imports" }
+            "@graph": [
+              {
+                "@type": "CollectionPage",
+                "name": "Bebidas Premium",
+                "description": "Botellas de edición limitada y maltas exclusivas de las destilerías más prestigiosas del mundo como Johnnie Walker Blue Label, The Macallan 18 y Louis XIII Cognac.",
+                "mainEntity": {
+                  "@type": "ItemList",
+                  "itemListElement": [
+                    {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "item": {
+                        "@type": "Product",
+                        "name": "Johnnie Walker Blue Label 750ml",
+                        "offers": {
+                          "@type": "Offer",
+                          "priceCurrency": "USD",
+                          "price": "160",
+                          "availability": "https://schema.org/InStock",
+                          "seller": { "@type": "Organization", "name": "Kamba Imports" }
+                        }
+                      }
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "item": {
+                        "@type": "Product",
+                        "name": "Macallan 18 Years Double Cask",
+                        "offers": {
+                          "@type": "Offer",
+                          "priceCurrency": "USD",
+                          "price": "320",
+                          "availability": "https://schema.org/InStock",
+                          "seller": { "@type": "Organization", "name": "Kamba Imports" }
+                        }
+                      }
                     }
-                  }
-                },
-                {
-                  "@type": "ListItem",
-                  "position": 2,
-                  "item": {
-                    "@type": "Product",
-                    "name": "Macallan 18 Years Double Cask",
-                    "offers": {
-                      "@type": "Offer",
-                      "priceCurrency": "USD",
-                      "price": "320",
-                      "availability": "https://schema.org/InStock",
-                      "seller": { "@type": "Organization", "name": "Kamba Imports" }
-                    }
-                  }
+                  ]
                 }
-              ]
-            }
+              },
+              {
+                "@type": "FAQPage",
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "¿Cómo garantizan la autenticidad de las botellas premium?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Todas nuestras bebidas premium se compran en locales importadores oficiales autorizados, asegurando que cada botella es 100% auténtica y original."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "¿Cómo se transportan las botellas para que no se rompan?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Las botellas se embalan cuidadosamente y se transportan en sus empaques y estuches originales, utilizando protección adicional para garantizar que lleguen en perfectas condiciones."
+                    }
+                  }
+                ]
+              }
+            ]
           })}
         </script>
         <meta property="og:title" content="Bebidas Premium - Kamba Imports" />
@@ -116,6 +141,25 @@ export default function Bebidas() {
             >
               Consultar stock y cotización
             </a>
+
+            {/* FAQ Bebidas */}
+            <div className="mt-16 pt-12 border-t border-ink/10">
+              <h2 className="text-xl font-serif mb-8">Preguntas Frecuentes sobre Bebidas</h2>
+              <div className="space-y-6">
+                <div>
+                  <h3 className="text-sm uppercase tracking-widest font-bold mb-2 italic">¿Cómo garantizan la autenticidad de las botellas premium?</h3>
+                  <p className="text-sm font-light leading-relaxed opacity-80">
+                    Todas nuestras bebidas premium se compran en locales importadores oficiales autorizados, asegurando que cada botella es 100% auténtica y original.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-sm uppercase tracking-widest font-bold mb-2 italic">¿Cómo se transportan las botellas para que no se rompan?</h3>
+                  <p className="text-sm font-light leading-relaxed opacity-80">
+                    Las botellas se embalan cuidadosamente y se transportan en sus empaques y estuches originales, utilizando protección adicional para garantizar que lleguen en perfectas condiciones.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

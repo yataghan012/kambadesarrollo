@@ -10,7 +10,92 @@ export default function LegalidadAduana() {
         <title>Aduana y Legalidad - Kamba Imports</title>
         <meta name="description" content="Entendé el contexto sobre la aduana Ciudad del Este Argentina. Información clara sobre si es legal importar de Paraguay y cómo lo manejamos." />
         <link rel="canonical" href={`${SITE_URL}/legalidad-y-aduana`} />
-              <meta property="og:title" content="Aduana y Legalidad - Kamba Imports" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "FAQPage",
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "¿Es legal importar de Paraguay?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Esta es la primera pregunta que todos se hacen. La respuesta corta es sí, pero con matices importantes. El problema no es Paraguay, sino que la normativa argentina es históricamente muy restrictiva en cuanto a los volúmenes, montos y tipos de productos que pueden ingresar libremente. Existe una gran diferencia conceptual entre la importación de productos personales en Argentina y el ingreso a gran escala para uso puramente comercial o reventa mayorista. La aduana Ciudad del Este Argentina tiene un flujo constante y controles específicos. Comprar no tiene nada de ilícito, pero el ingreso requiere saber navegar las particularidades de la frontera, entender los límites y no exponerse innecesariamente."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "El mito y la realidad de Ciudad del Este",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Ciudad del Este es uno de los polos comerciales más grandes del mundo. Hay un mito de que \"todo es trucho\", pero la realidad es que operan distribuidores oficiales, representantes de marcas globales y shoppings de primer nivel internacional. La clave está en saber dónde entrar y dónde no."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Cómo sabemos que un producto es original",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "No me manejo con palabras vacías. Lo que asegura que el producto que te llega es auténtico no es una promesa al aire, sino los hechos comprobables: Tiendas autorizadas: Solo compro en locales establecidos que figuran como representantes oficiales de cada marca. Facturación y trazabilidad: Cada compra se acompaña de su ticket o factura del local. Empaque y sellos: Los productos (celulares, notebooks, perfumes) se entregan con los sellos y films originales de fábrica. Respaldo del fabricante: Un equipo original de Apple o Samsung, por ejemplo, cuenta con su respectiva garantía internacional de fábrica verificable por número de serie."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Los riesgos de comprar sin experiencia",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Venir de turismo a comprar o encargar a revendedores informales tiene riesgos. Las estafas en locales de la calle ocurren, los productos reacondicionados vendidos como nuevos existen, y el desconocimiento sobre cómo moverse por los controles puede resultar en demoras, recargos o incluso la retención de la mercadería. Es por eso que el servicio que ofrezco radica en mi presencia acá y mi experiencia en el terreno."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Hablemos de tu caso puntual",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "No existen dos operaciones iguales. Dependiendo de si querés un teléfono, una notebook o un perfume, los tiempos, la viabilidad y los detalles cambian. Cada operación tiene sus particularidades según el producto y el momento — por eso prefiero que lo hablemos de forma directa y lo definamos juntos por WhatsApp. Así te sacás todas las dudas antes de tomar una decisión."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "¿Cuánto puedo traer sin pagar impuestos si voy como turista?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "El monto exacto de franquicia libre de impuestos vigente para cruces terrestres Argentina-Paraguay es de USD 300 por pasajero mayor de edad, más 1 notebook o tablet, 1 celular, y ropa u objetos de uso personal sin fines comerciales. Este límite es mensual y no acumulable. Si te excedés del límite, deberás abonar un impuesto equivalente al 50% sobre el monto excedente."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "¿Qué pasa si la aduana retiene mi envío si voy como turista?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Si la aduana de Iguazú retiene tu encomienda, emitirán una citación formal mediante el Boletín Oficial para realizar la apertura del paquete en su sede. Deberás hacer el seguimiento con Correo Argentino, presentar la factura de compra junto a tu DNI y, al no residir en Misiones, nombrar a un despachante local o apoderado para que asista presencialmente a la requisa. Dependiendo del resultado de la inspección, el paquete puede ser liberado, sujeto al pago de diferencias de impuestos o multas, o decomisado definitivamente si determinan que tiene un fin comercial oculto o viola el Código Aduanero."
+                    }
+                  }
+                ]
+              },
+              {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Inicio",
+                    "item": SITE_URL
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Legalidad y Aduana",
+                    "item": `${SITE_URL}/legalidad-y-aduana`
+                  }
+                ]
+              }
+            ]
+          })}
+        </script>
+        <meta property="og:title" content="Aduana y Legalidad - Kamba Imports" />
         <meta property="og:description" content="Entendé el contexto sobre la aduana Ciudad del Este Argentina. Información clara sobre si es legal importar de Paraguay y cómo lo manejamos." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={`${SITE_URL}/legalidad-y-aduana`} />
@@ -90,6 +175,29 @@ export default function LegalidadAduana() {
                 >
                   Escribime ahora y revisamos tu caso
                 </a>
+              </div>
+            </div>
+          </div>
+
+          {/* FAQ Turistas */}
+          <div className="mt-16 pt-12 border-t border-ink/10">
+            <h2 className="text-2xl font-serif mb-8">Preguntas Frecuentes de Turistas</h2>
+            <div className="space-y-8">
+              <div>
+                <h2 className="text-sm uppercase tracking-widest font-bold mb-2 italic">¿Cuánto puedo traer sin pagar impuestos si voy como turista?</h2>
+                <p className="font-light leading-relaxed opacity-80 mb-4">
+                  El monto exacto de franquicia libre de impuestos vigente para cruces terrestres Argentina-Paraguay es de <strong className="font-normal opacity-100">USD 300 por pasajero mayor de edad</strong>, más 1 notebook o tablet, 1 celular, y ropa u objetos de uso personal sin fines comerciales. Este límite es mensual y no acumulable.
+                </p>
+                <p className="font-light leading-relaxed opacity-80">
+                  <strong className="font-normal opacity-100">¿Qué pasa si te excedés del límite?</strong><br />
+                  Si el valor total de las compras supera tu franquicia, deberás abonar un impuesto equivalente al 50% sobre el monto excedente. Ejemplo: Si un adulto gasta USD 400 por tierra, se excedió en USD 100. El impuesto a pagar en la aduana será de USD 50.
+                </p>
+              </div>
+              <div>
+                <h2 className="text-sm uppercase tracking-widest font-bold mb-2 italic">¿Qué pasa si la aduana retiene mi envío si voy como turista?</h2>
+                <p className="font-light leading-relaxed opacity-80">
+                  Si la aduana de Iguazú retiene tu encomienda como turista, emitirán una citación formal mediante el Boletín Oficial para realizar la apertura del paquete en su sede y verificar si el contenido coincide con lo declarado o supera límites comerciales. Deberás hacer el seguimiento con Correo Argentino, presentar la factura de compra junto a tu DNI y, al no residir en Misiones, nombrar a un despachante local o apoderado para que asista presencialmente a la requisa. Dependiendo del resultado de la inspección, el paquete puede ser liberado, sujeto al pago de diferencias de impuestos o multas, o decomisado definitivamente si determinan que tiene un fin comercial oculto o viola el Código Aduanero.
+                </p>
               </div>
             </div>
           </div>

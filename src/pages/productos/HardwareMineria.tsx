@@ -13,44 +13,69 @@ export default function HardwareMineria() {
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "CollectionPage",
-            "name": "Hardware y Minería",
-            "description": "Equipamiento de computación de alto rendimiento: placas de video RTX, procesadores, motherboards y notebooks premium para gamers, creadores de contenido y minería.",
-            "mainEntity": {
-              "@type": "ItemList",
-              "itemListElement": [
-                {
-                  "@type": "ListItem",
-                  "position": 1,
-                  "item": {
-                    "@type": "Product",
-                    "name": "NVIDIA RTX 4090 24GB ASUS ROG",
-                    "offers": {
-                      "@type": "Offer",
-                      "priceCurrency": "USD",
-                      "price": "2200",
-                      "availability": "https://schema.org/InStock",
-                      "seller": { "@type": "Organization", "name": "Kamba Imports" }
+            "@graph": [
+              {
+                "@type": "CollectionPage",
+                "name": "Hardware y Minería",
+                "description": "Equipamiento de computación de alto rendimiento: placas de video RTX, procesadores, motherboards y notebooks premium para gamers, creadores de contenido y minería.",
+                "mainEntity": {
+                  "@type": "ItemList",
+                  "itemListElement": [
+                    {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "item": {
+                        "@type": "Product",
+                        "name": "NVIDIA RTX 4090 24GB ASUS ROG",
+                        "offers": {
+                          "@type": "Offer",
+                          "priceCurrency": "USD",
+                          "price": "2200",
+                          "availability": "https://schema.org/InStock",
+                          "seller": { "@type": "Organization", "name": "Kamba Imports" }
+                        }
+                      }
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "item": {
+                        "@type": "Product",
+                        "name": "AMD Ryzen 9 7950X3D",
+                        "offers": {
+                          "@type": "Offer",
+                          "priceCurrency": "USD",
+                          "price": "650",
+                          "availability": "https://schema.org/InStock",
+                          "seller": { "@type": "Organization", "name": "Kamba Imports" }
+                        }
+                      }
                     }
-                  }
-                },
-                {
-                  "@type": "ListItem",
-                  "position": 2,
-                  "item": {
-                    "@type": "Product",
-                    "name": "AMD Ryzen 9 7950X3D",
-                    "offers": {
-                      "@type": "Offer",
-                      "priceCurrency": "USD",
-                      "price": "650",
-                      "availability": "https://schema.org/InStock",
-                      "seller": { "@type": "Organization", "name": "Kamba Imports" }
-                    }
-                  }
+                  ]
                 }
-              ]
-            }
+              },
+              {
+                "@type": "FAQPage",
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "¿Los componentes y placas de video tienen garantía?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Sí, todos los componentes de hardware y placas de video para minería cuentan con la garantía oficial del fabricante, asegurando tu inversión."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "¿Cómo sé si una placa de video es compatible o legítima?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Solo trabajamos con hardware nuevo y en caja sellada proveniente de distribuidores oficiales. Puedes verificar el número de serie de cada componente con el fabricante para confirmar su autenticidad y compatibilidad."
+                    }
+                  }
+                ]
+              }
+            ]
           })}
         </script>
         <meta property="og:title" content="Hardware y Minería - Kamba Imports" />
@@ -116,6 +141,25 @@ export default function HardwareMineria() {
             >
               Consultar stock y cotización
             </a>
+
+            {/* FAQ Hardware y Minería */}
+            <div className="mt-16 pt-12 border-t border-ink/10">
+              <h2 className="text-xl font-serif mb-8">Preguntas Frecuentes sobre Hardware</h2>
+              <div className="space-y-6">
+                <div>
+                  <h3 className="text-sm uppercase tracking-widest font-bold mb-2 italic">¿Los componentes y placas de video tienen garantía?</h3>
+                  <p className="text-sm font-light leading-relaxed opacity-80">
+                    Sí, todos los componentes de hardware y placas de video para minería cuentan con la garantía oficial del fabricante, asegurando tu inversión.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-sm uppercase tracking-widest font-bold mb-2 italic">¿Cómo sé si una placa de video es compatible o legítima?</h3>
+                  <p className="text-sm font-light leading-relaxed opacity-80">
+                    Solo trabajamos con hardware nuevo y en caja sellada proveniente de distribuidores oficiales. Puedes verificar el número de serie de cada componente con el fabricante para confirmar su autenticidad y compatibilidad.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

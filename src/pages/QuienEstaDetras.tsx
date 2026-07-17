@@ -10,7 +10,20 @@ export default function QuienEstaDetras() {
         <title>Quién Está Detrás - Kamba Imports</title>
         <meta name="description" content="Conocé mi historia, cómo llegué a Ciudad del Este y por qué decidí armar Kamba Imports para ayudarte a comprar de forma segura." />
         <link rel="canonical" href={`${SITE_URL}/quien-esta-detras`} />
-              <meta property="og:title" content="Quién Está Detrás - Kamba Imports" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "AboutPage",
+            "mainEntity": {
+              "@type": "Person",
+              "name": "Tomás",
+              "worksFor": {
+                "@id": `${SITE_URL}/#business`
+              }
+            }
+          })}
+        </script>
+        <meta property="og:title" content="Quién Está Detrás - Kamba Imports" />
         <meta property="og:description" content="Conocé mi historia, cómo llegué a Ciudad del Este y por qué decidí armar Kamba Imports para ayudarte a comprar de forma segura." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={`${SITE_URL}/quien-esta-detras`} />

@@ -13,59 +13,84 @@ export default function CelularesNotebooks() {
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "CollectionPage",
-            "name": "Celulares y Notebooks",
-            "description": "Las mejores marcas del mercado en telefonía y computación. Equipos originales Apple, Samsung, Lenovo y más, con garantía de fábrica.",
-            "mainEntity": {
-              "@type": "ItemList",
-              "itemListElement": [
-                {
-                  "@type": "ListItem",
-                  "position": 1,
-                  "item": {
-                    "@type": "Product",
-                    "name": "iPhone 16 Pro Max 256GB",
-                    "offers": {
-                      "@type": "Offer",
-                      "priceCurrency": "USD",
-                      "price": "1330",
-                      "availability": "https://schema.org/InStock",
-                      "seller": { "@type": "Organization", "name": "Kamba Imports" }
+            "@graph": [
+              {
+                "@type": "CollectionPage",
+                "name": "Celulares y Notebooks",
+                "description": "Las mejores marcas del mercado en telefonía y computación. Equipos originales Apple, Samsung, Lenovo y más, con garantía de fábrica.",
+                "mainEntity": {
+                  "@type": "ItemList",
+                  "itemListElement": [
+                    {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "item": {
+                        "@type": "Product",
+                        "name": "iPhone 16 Pro Max 256GB",
+                        "offers": {
+                          "@type": "Offer",
+                          "priceCurrency": "USD",
+                          "price": "1330",
+                          "availability": "https://schema.org/InStock",
+                          "seller": { "@type": "Organization", "name": "Kamba Imports" }
+                        }
+                      }
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "item": {
+                        "@type": "Product",
+                        "name": "MacBook Air M3 8-Core 256GB",
+                        "offers": {
+                          "@type": "Offer",
+                          "priceCurrency": "USD",
+                          "price": "1050",
+                          "availability": "https://schema.org/InStock",
+                          "seller": { "@type": "Organization", "name": "Kamba Imports" }
+                        }
+                      }
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "item": {
+                        "@type": "Product",
+                        "name": "Samsung S24 Ultra 256GB",
+                        "offers": {
+                          "@type": "Offer",
+                          "priceCurrency": "USD",
+                          "price": "1080",
+                          "availability": "https://schema.org/InStock",
+                          "seller": { "@type": "Organization", "name": "Kamba Imports" }
+                        }
+                      }
                     }
-                  }
-                },
-                {
-                  "@type": "ListItem",
-                  "position": 2,
-                  "item": {
-                    "@type": "Product",
-                    "name": "MacBook Air M3 8-Core 256GB",
-                    "offers": {
-                      "@type": "Offer",
-                      "priceCurrency": "USD",
-                      "price": "1050",
-                      "availability": "https://schema.org/InStock",
-                      "seller": { "@type": "Organization", "name": "Kamba Imports" }
-                    }
-                  }
-                },
-                {
-                  "@type": "ListItem",
-                  "position": 3,
-                  "item": {
-                    "@type": "Product",
-                    "name": "Samsung S24 Ultra 256GB",
-                    "offers": {
-                      "@type": "Offer",
-                      "priceCurrency": "USD",
-                      "price": "1080",
-                      "availability": "https://schema.org/InStock",
-                      "seller": { "@type": "Organization", "name": "Kamba Imports" }
-                    }
-                  }
+                  ]
                 }
-              ]
-            }
+              },
+              {
+                "@type": "FAQPage",
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "¿Los equipos vienen libres de fábrica?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Totalmente. Todos los celulares y tablets se compran liberados (factory unlocked), listos para que les pongas tu chip de Argentina y empieces a usarlos al instante."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "¿Qué pasa con los enchufes de las notebooks o consolas?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Muchos de los equipos electrónicos en Ciudad del Este vienen con conectores norma americana o europea. Es normal. En la mayoría de los casos te vas a manejar con un adaptador simple o cambiando el cable interlock."
+                    }
+                  }
+                ]
+              }
+            ]
           })}
         </script>
         <meta property="og:title" content="Celulares y Notebooks - Kamba Imports" />

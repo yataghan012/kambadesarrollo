@@ -10,6 +10,75 @@ export default function Productos() {
         <title>Categorías de Productos - Kamba Imports</title>
         <meta name="description" content="Accedé a productos originales Ciudad del Este con la tranquilidad de que compramos en distribuidores oficiales. Conocé nuestras categorías." />
         <link rel="canonical" href={`${SITE_URL}/productos`} />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "CollectionPage",
+                "name": "Categorías de Productos - Kamba Imports",
+                "mainEntity": {
+                  "@type": "ItemList",
+                  "itemListElement": [
+                    {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "url": `${SITE_URL}/productos/celulares-notebooks`,
+                      "name": "Celulares y Notebooks"
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "url": `${SITE_URL}/productos/relojes`,
+                      "name": "Relojes"
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "url": `${SITE_URL}/productos/consolas`,
+                      "name": "Consolas"
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 4,
+                      "url": `${SITE_URL}/productos/hardware-mineria`,
+                      "name": "Hardware & Minería"
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 5,
+                      "url": `${SITE_URL}/productos/camaras`,
+                      "name": "Cámaras Fotográficas"
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 6,
+                      "url": `${SITE_URL}/productos/bebidas`,
+                      "name": "Bebidas Premium"
+                    }
+                  ]
+                }
+              },
+              {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Inicio",
+                    "item": SITE_URL
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Productos",
+                    "item": `${SITE_URL}/productos`
+                  }
+                ]
+              }
+            ]
+          })}
+        </script>
         <meta property="og:title" content="Categorías de Productos - Kamba Imports" />
         <meta property="og:description" content="Accedé a productos originales Ciudad del Este con la tranquilidad de que compramos en distribuidores oficiales. Conocé nuestras categorías." />
         <meta property="og:type" content="website" />

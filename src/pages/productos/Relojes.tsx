@@ -13,59 +13,84 @@ export default function Relojes() {
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "CollectionPage",
-            "name": "Relojes de Primeras Marcas",
-            "description": "Relojes inteligentes (smartwatches como Apple Watch y Garmin) y relojería tradicional de marcas internacionales, comprados en distribuidores oficiales autorizados en Ciudad del Este.",
-            "mainEntity": {
-              "@type": "ItemList",
-              "itemListElement": [
-                {
-                  "@type": "ListItem",
-                  "position": 1,
-                  "item": {
-                    "@type": "Product",
-                    "name": "Apple Watch S11 42MM GPS",
-                    "offers": {
-                      "@type": "Offer",
-                      "priceCurrency": "USD",
-                      "price": "343",
-                      "availability": "https://schema.org/InStock",
-                      "seller": { "@type": "Organization", "name": "Kamba Imports" }
+            "@graph": [
+              {
+                "@type": "CollectionPage",
+                "name": "Relojes de Primeras Marcas",
+                "description": "Relojes inteligentes (smartwatches como Apple Watch y Garmin) y relojería tradicional de marcas internacionales, comprados en distribuidores oficiales autorizados en Ciudad del Este.",
+                "mainEntity": {
+                  "@type": "ItemList",
+                  "itemListElement": [
+                    {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "item": {
+                        "@type": "Product",
+                        "name": "Apple Watch S11 42MM GPS",
+                        "offers": {
+                          "@type": "Offer",
+                          "priceCurrency": "USD",
+                          "price": "343",
+                          "availability": "https://schema.org/InStock",
+                          "seller": { "@type": "Organization", "name": "Kamba Imports" }
+                        }
+                      }
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "item": {
+                        "@type": "Product",
+                        "name": "Garmin Forerunner 965",
+                        "offers": {
+                          "@type": "Offer",
+                          "priceCurrency": "USD",
+                          "price": "515",
+                          "availability": "https://schema.org/InStock",
+                          "seller": { "@type": "Organization", "name": "Kamba Imports" }
+                        }
+                      }
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "item": {
+                        "@type": "Product",
+                        "name": "Citizen Promaster Dive",
+                        "offers": {
+                          "@type": "Offer",
+                          "priceCurrency": "USD",
+                          "price": "330",
+                          "availability": "https://schema.org/InStock",
+                          "seller": { "@type": "Organization", "name": "Kamba Imports" }
+                        }
+                      }
                     }
-                  }
-                },
-                {
-                  "@type": "ListItem",
-                  "position": 2,
-                  "item": {
-                    "@type": "Product",
-                    "name": "Garmin Forerunner 965",
-                    "offers": {
-                      "@type": "Offer",
-                      "priceCurrency": "USD",
-                      "price": "515",
-                      "availability": "https://schema.org/InStock",
-                      "seller": { "@type": "Organization", "name": "Kamba Imports" }
-                    }
-                  }
-                },
-                {
-                  "@type": "ListItem",
-                  "position": 3,
-                  "item": {
-                    "@type": "Product",
-                    "name": "Citizen Promaster Dive",
-                    "offers": {
-                      "@type": "Offer",
-                      "priceCurrency": "USD",
-                      "price": "330",
-                      "availability": "https://schema.org/InStock",
-                      "seller": { "@type": "Organization", "name": "Kamba Imports" }
-                    }
-                  }
+                  ]
                 }
-              ]
-            }
+              },
+              {
+                "@type": "FAQPage",
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "¿Cómo sé que no es una réplica?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Únicamente realizo compras en distribuidores oficiales. Recibís el producto en su estuche original, con la etiqueta de la marca y la tarjeta de garantía internacional sellada por el agente autorizado."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "¿Traés modelos específicos a pedido?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Sí, si estás buscando un modelo en particular, pasame la referencia exacta o una foto. Yo me encargo de recorrer los locales autorizados y te aviso si hay stock y a qué valor."
+                    }
+                  }
+                ]
+              }
+            ]
           })}
         </script>
               <meta property="og:title" content="Relojes Importados - Kamba Imports" />

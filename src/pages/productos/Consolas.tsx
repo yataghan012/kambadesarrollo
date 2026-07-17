@@ -13,59 +13,84 @@ export default function Consolas() {
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "CollectionPage",
-            "name": "Consolas y Videojuegos",
-            "description": "Las consolas de entretenimiento de última generación (PlayStation 5, Nintendo Switch, Xbox Series X/S) traídas de distribuidores autorizados en Ciudad del Este.",
-            "mainEntity": {
-              "@type": "ItemList",
-              "itemListElement": [
-                {
-                  "@type": "ListItem",
-                  "position": 1,
-                  "item": {
-                    "@type": "Product",
-                    "name": "PlayStation 5 Slim (Disco)",
-                    "offers": {
-                      "@type": "Offer",
-                      "priceCurrency": "USD",
-                      "price": "520",
-                      "availability": "https://schema.org/InStock",
-                      "seller": { "@type": "Organization", "name": "Kamba Imports" }
+            "@graph": [
+              {
+                "@type": "CollectionPage",
+                "name": "Consolas y Videojuegos",
+                "description": "Las consolas de entretenimiento de última generación (PlayStation 5, Nintendo Switch, Xbox Series X/S) traídas de distribuidores autorizados en Ciudad del Este.",
+                "mainEntity": {
+                  "@type": "ItemList",
+                  "itemListElement": [
+                    {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "item": {
+                        "@type": "Product",
+                        "name": "PlayStation 5 Slim (Disco)",
+                        "offers": {
+                          "@type": "Offer",
+                          "priceCurrency": "USD",
+                          "price": "520",
+                          "availability": "https://schema.org/InStock",
+                          "seller": { "@type": "Organization", "name": "Kamba Imports" }
+                        }
+                      }
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "item": {
+                        "@type": "Product",
+                        "name": "Meta Quest 3 128GB",
+                        "offers": {
+                          "@type": "Offer",
+                          "priceCurrency": "USD",
+                          "price": "515",
+                          "availability": "https://schema.org/InStock",
+                          "seller": { "@type": "Organization", "name": "Kamba Imports" }
+                        }
+                      }
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "item": {
+                        "@type": "Product",
+                        "name": "Nintendo Switch OLED",
+                        "offers": {
+                          "@type": "Offer",
+                          "priceCurrency": "USD",
+                          "price": "315",
+                          "availability": "https://schema.org/InStock",
+                          "seller": { "@type": "Organization", "name": "Kamba Imports" }
+                        }
+                      }
                     }
-                  }
-                },
-                {
-                  "@type": "ListItem",
-                  "position": 2,
-                  "item": {
-                    "@type": "Product",
-                    "name": "Meta Quest 3 128GB",
-                    "offers": {
-                      "@type": "Offer",
-                      "priceCurrency": "USD",
-                      "price": "515",
-                      "availability": "https://schema.org/InStock",
-                      "seller": { "@type": "Organization", "name": "Kamba Imports" }
-                    }
-                  }
-                },
-                {
-                  "@type": "ListItem",
-                  "position": 3,
-                  "item": {
-                    "@type": "Product",
-                    "name": "Nintendo Switch OLED",
-                    "offers": {
-                      "@type": "Offer",
-                      "priceCurrency": "USD",
-                      "price": "315",
-                      "availability": "https://schema.org/InStock",
-                      "seller": { "@type": "Organization", "name": "Kamba Imports" }
-                    }
-                  }
+                  ]
                 }
-              ]
-            }
+              },
+              {
+                "@type": "FAQPage",
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "¿Las consolas funcionan en Argentina?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Sí, son multivoltaje (110V-220V) por lo que funcionan perfectamente en Argentina sin necesidad de transformadores de voltaje. Solo podrías llegar a necesitar un adaptador de enchufe convencional."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "¿Vienen cerradas de fábrica?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Por supuesto. Se entregan en su caja original sellada con sus precintos intactos. Vos sos el primero en abrirlas."
+                    }
+                  }
+                ]
+              }
+            ]
           })}
         </script>
         <meta property="og:title" content="Consolas y Videojuegos - Kamba Imports" />

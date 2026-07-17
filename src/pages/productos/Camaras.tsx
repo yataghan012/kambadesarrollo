@@ -13,44 +13,69 @@ export default function Camaras() {
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "CollectionPage",
-            "name": "Cámaras Profesionales",
-            "description": "Equipos de primer nivel para fotografía y video profesional. Sony, Canon y Nikon, desde cuerpos Mirrorless hasta lentes de la serie G Master y L.",
-            "mainEntity": {
-              "@type": "ItemList",
-              "itemListElement": [
-                {
-                  "@type": "ListItem",
-                  "position": 1,
-                  "item": {
-                    "@type": "Product",
-                    "name": "Sony Alpha a7 IV (Solo cuerpo)",
-                    "offers": {
-                      "@type": "Offer",
-                      "priceCurrency": "USD",
-                      "price": "2150",
-                      "availability": "https://schema.org/InStock",
-                      "seller": { "@type": "Organization", "name": "Kamba Imports" }
+            "@graph": [
+              {
+                "@type": "CollectionPage",
+                "name": "Cámaras Profesionales",
+                "description": "Equipos de primer nivel para fotografía y video profesional. Sony, Canon y Nikon, desde cuerpos Mirrorless hasta lentes de la serie G Master y L.",
+                "mainEntity": {
+                  "@type": "ItemList",
+                  "itemListElement": [
+                    {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "item": {
+                        "@type": "Product",
+                        "name": "Sony Alpha a7 IV (Solo cuerpo)",
+                        "offers": {
+                          "@type": "Offer",
+                          "priceCurrency": "USD",
+                          "price": "2150",
+                          "availability": "https://schema.org/InStock",
+                          "seller": { "@type": "Organization", "name": "Kamba Imports" }
+                        }
+                      }
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "item": {
+                        "@type": "Product",
+                        "name": "Canon EOS R6 Mark II",
+                        "offers": {
+                          "@type": "Offer",
+                          "priceCurrency": "USD",
+                          "price": "2200",
+                          "availability": "https://schema.org/InStock",
+                          "seller": { "@type": "Organization", "name": "Kamba Imports" }
+                        }
+                      }
                     }
-                  }
-                },
-                {
-                  "@type": "ListItem",
-                  "position": 2,
-                  "item": {
-                    "@type": "Product",
-                    "name": "Canon EOS R6 Mark II",
-                    "offers": {
-                      "@type": "Offer",
-                      "priceCurrency": "USD",
-                      "price": "2200",
-                      "availability": "https://schema.org/InStock",
-                      "seller": { "@type": "Organization", "name": "Kamba Imports" }
-                    }
-                  }
+                  ]
                 }
-              ]
-            }
+              },
+              {
+                "@type": "FAQPage",
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "¿Los lentes y cuerpos son originales y auténticos?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Sí, todos nuestros equipos fotográficos (Sony, Canon, Nikon) son 100% originales, nuevos y se adquieren directamente en los distribuidores oficiales."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "¿Qué tipo de garantía ofrecen los equipos?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Todos los cuerpos de cámara y lentes cuentan con la garantía oficial del fabricante, al provenir de las tiendas autorizadas de cada marca."
+                    }
+                  }
+                ]
+              }
+            ]
           })}
         </script>
         <meta property="og:title" content="Cámaras Profesionales - Kamba Imports" />
@@ -116,6 +141,25 @@ export default function Camaras() {
             >
               Consultar stock y cotización
             </a>
+
+            {/* FAQ Cámaras */}
+            <div className="mt-16 pt-12 border-t border-ink/10">
+              <h2 className="text-xl font-serif mb-8">Preguntas Frecuentes sobre Cámaras</h2>
+              <div className="space-y-6">
+                <div>
+                  <h3 className="text-sm uppercase tracking-widest font-bold mb-2 italic">¿Los lentes y cuerpos son originales y auténticos?</h3>
+                  <p className="text-sm font-light leading-relaxed opacity-80">
+                    Sí, todos nuestros equipos fotográficos (Sony, Canon, Nikon) son 100% originales, nuevos y se adquieren directamente en los distribuidores oficiales.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-sm uppercase tracking-widest font-bold mb-2 italic">¿Qué tipo de garantía ofrecen los equipos?</h3>
+                  <p className="text-sm font-light leading-relaxed opacity-80">
+                    Todos los cuerpos de cámara y lentes cuentan con la garantía oficial del fabricante, al provenir de las tiendas autorizadas de cada marca.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

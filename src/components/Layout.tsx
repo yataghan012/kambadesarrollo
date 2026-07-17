@@ -153,7 +153,7 @@ export default function Layout() {
                 <a 
                   href="https://www.comprasparaguay.com.ar" 
                   target="_blank" 
-                  rel="noopener noreferrer" 
+                  rel="nofollow noopener noreferrer" 
                   className="hover:opacity-60 transition-opacity flex items-center gap-1.5"
                 >
                   Comparador Compras Paraguay ↗
@@ -161,7 +161,7 @@ export default function Layout() {
                 <a 
                   href="https://nissei.com/py/fotografia-filmacion" 
                   target="_blank" 
-                  rel="noopener noreferrer" 
+                  rel="nofollow noopener noreferrer" 
                   className="hover:opacity-60 transition-opacity flex items-center gap-1.5"
                 >
                   Nissei (Foto y Filmación) ↗
@@ -169,7 +169,7 @@ export default function Layout() {
                 <a 
                   href="https://cellshop.com/todos-os-departamentos/tecnologia/apple?product_list_order=price" 
                   target="_blank" 
-                  rel="noopener noreferrer" 
+                  rel="nofollow noopener noreferrer" 
                   className="hover:opacity-60 transition-opacity flex items-center gap-1.5"
                 >
                   Apple en Cellshop ↗
@@ -177,7 +177,7 @@ export default function Layout() {
                 <a 
                   href="https://atacadoconnect.com/categoria/informatica?sort=preco_desc" 
                   target="_blank" 
-                  rel="noopener noreferrer" 
+                  rel="nofollow noopener noreferrer" 
                   className="hover:opacity-60 transition-opacity flex items-center gap-1.5"
                 >
                   Atacado Connect (Computación) ↗
@@ -188,7 +188,7 @@ export default function Layout() {
                     <a 
                       href="https://www.instagram.com/modojuanchi/" 
                       target="_blank" 
-                      rel="noopener noreferrer" 
+                      rel="nofollow noopener noreferrer" 
                       className="hover:opacity-60 transition-opacity text-[10px] text-accent font-bold"
                     >
                       @modojuanchi ↗
@@ -196,7 +196,7 @@ export default function Layout() {
                     <a 
                       href="https://www.instagram.com/lilbravoirl/" 
                       target="_blank" 
-                      rel="noopener noreferrer" 
+                      rel="nofollow noopener noreferrer" 
                       className="hover:opacity-60 transition-opacity text-[10px] text-accent font-bold"
                     >
                       @lilbravoirl ↗

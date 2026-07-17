@@ -13,15 +13,43 @@ export default function Camaras() {
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "Product",
+            "@type": "CollectionPage",
             "name": "Cámaras Profesionales",
             "description": "Equipos de primer nivel para fotografía y video profesional. Sony, Canon y Nikon, desde cuerpos Mirrorless hasta lentes de la serie G Master y L.",
-            "offers": {
-              "@type": "AggregateOffer",
-              "priceCurrency": "USD",
-              "lowPrice": "500",
-              "offerCount": "3",
-              "priceRange": "$$$"
+            "mainEntity": {
+              "@type": "ItemList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "item": {
+                    "@type": "Product",
+                    "name": "Sony Alpha a7 IV (Solo cuerpo)",
+                    "offers": {
+                      "@type": "Offer",
+                      "priceCurrency": "USD",
+                      "price": "2150",
+                      "availability": "https://schema.org/InStock",
+                      "seller": { "@type": "Organization", "name": "Kamba Imports" }
+                    }
+                  }
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "item": {
+                    "@type": "Product",
+                    "name": "Canon EOS R6 Mark II",
+                    "offers": {
+                      "@type": "Offer",
+                      "priceCurrency": "USD",
+                      "price": "2200",
+                      "availability": "https://schema.org/InStock",
+                      "seller": { "@type": "Organization", "name": "Kamba Imports" }
+                    }
+                  }
+                }
+              ]
             }
           })}
         </script>

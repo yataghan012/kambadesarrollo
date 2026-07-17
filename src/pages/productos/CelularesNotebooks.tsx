@@ -13,15 +13,58 @@ export default function CelularesNotebooks() {
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "Product",
+            "@type": "CollectionPage",
             "name": "Celulares y Notebooks",
             "description": "Las mejores marcas del mercado en telefonía y computación. Equipos originales Apple, Samsung, Lenovo y más, con garantía de fábrica.",
-            "offers": {
-              "@type": "AggregateOffer",
-              "priceCurrency": "USD",
-              "lowPrice": "940",
-              "offerCount": "3",
-              "priceRange": "$$$"
+            "mainEntity": {
+              "@type": "ItemList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "item": {
+                    "@type": "Product",
+                    "name": "iPhone 16 Pro Max 256GB",
+                    "offers": {
+                      "@type": "Offer",
+                      "priceCurrency": "USD",
+                      "price": "1330",
+                      "availability": "https://schema.org/InStock",
+                      "seller": { "@type": "Organization", "name": "Kamba Imports" }
+                    }
+                  }
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "item": {
+                    "@type": "Product",
+                    "name": "MacBook Air M3 8-Core 256GB",
+                    "offers": {
+                      "@type": "Offer",
+                      "priceCurrency": "USD",
+                      "price": "1050",
+                      "availability": "https://schema.org/InStock",
+                      "seller": { "@type": "Organization", "name": "Kamba Imports" }
+                    }
+                  }
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "item": {
+                    "@type": "Product",
+                    "name": "Samsung S24 Ultra 256GB",
+                    "offers": {
+                      "@type": "Offer",
+                      "priceCurrency": "USD",
+                      "price": "1080",
+                      "availability": "https://schema.org/InStock",
+                      "seller": { "@type": "Organization", "name": "Kamba Imports" }
+                    }
+                  }
+                }
+              ]
             }
           })}
         </script>

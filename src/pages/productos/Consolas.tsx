@@ -13,15 +13,58 @@ export default function Consolas() {
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "Product",
+            "@type": "CollectionPage",
             "name": "Consolas y Videojuegos",
             "description": "Las consolas de entretenimiento de última generación (PlayStation 5, Nintendo Switch, Xbox Series X/S) traídas de distribuidores autorizados en Ciudad del Este.",
-            "offers": {
-              "@type": "AggregateOffer",
-              "priceCurrency": "USD",
-              "lowPrice": "250",
-              "offerCount": "3",
-              "priceRange": "$$$"
+            "mainEntity": {
+              "@type": "ItemList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "item": {
+                    "@type": "Product",
+                    "name": "PlayStation 5 Slim (Disco)",
+                    "offers": {
+                      "@type": "Offer",
+                      "priceCurrency": "USD",
+                      "price": "520",
+                      "availability": "https://schema.org/InStock",
+                      "seller": { "@type": "Organization", "name": "Kamba Imports" }
+                    }
+                  }
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "item": {
+                    "@type": "Product",
+                    "name": "Meta Quest 3 128GB",
+                    "offers": {
+                      "@type": "Offer",
+                      "priceCurrency": "USD",
+                      "price": "515",
+                      "availability": "https://schema.org/InStock",
+                      "seller": { "@type": "Organization", "name": "Kamba Imports" }
+                    }
+                  }
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "item": {
+                    "@type": "Product",
+                    "name": "Nintendo Switch OLED",
+                    "offers": {
+                      "@type": "Offer",
+                      "priceCurrency": "USD",
+                      "price": "315",
+                      "availability": "https://schema.org/InStock",
+                      "seller": { "@type": "Organization", "name": "Kamba Imports" }
+                    }
+                  }
+                }
+              ]
             }
           })}
         </script>

@@ -13,15 +13,43 @@ export default function HardwareMineria() {
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "Product",
+            "@type": "CollectionPage",
             "name": "Hardware y Minería",
             "description": "Equipamiento de computación de alto rendimiento: placas de video RTX, procesadores, motherboards y notebooks premium para gamers, creadores de contenido y minería.",
-            "offers": {
-              "@type": "AggregateOffer",
-              "priceCurrency": "USD",
-              "lowPrice": "300",
-              "offerCount": "3",
-              "priceRange": "$$$"
+            "mainEntity": {
+              "@type": "ItemList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "item": {
+                    "@type": "Product",
+                    "name": "NVIDIA RTX 4090 24GB ASUS ROG",
+                    "offers": {
+                      "@type": "Offer",
+                      "priceCurrency": "USD",
+                      "price": "2200",
+                      "availability": "https://schema.org/InStock",
+                      "seller": { "@type": "Organization", "name": "Kamba Imports" }
+                    }
+                  }
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "item": {
+                    "@type": "Product",
+                    "name": "AMD Ryzen 9 7950X3D",
+                    "offers": {
+                      "@type": "Offer",
+                      "priceCurrency": "USD",
+                      "price": "650",
+                      "availability": "https://schema.org/InStock",
+                      "seller": { "@type": "Organization", "name": "Kamba Imports" }
+                    }
+                  }
+                }
+              ]
             }
           })}
         </script>

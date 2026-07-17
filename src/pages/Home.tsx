@@ -387,7 +387,14 @@ export default function Home() {
 
       <div className="flex flex-col h-[calc(100vh-81px)] md:h-[calc(100vh-105px)]">
         {/* Hero */}
-        <section className="relative px-6 md:px-12 py-16 md:py-28 flex flex-col justify-end flex-grow border-b border-ink/10 overflow-hidden">
+        <section
+          className="relative px-6 md:px-12 py-16 md:py-28 flex flex-col justify-end flex-grow border-b border-ink/10 overflow-hidden"
+          onClick={() => {
+            if (videoRef.current) {
+              videoRef.current.play().catch(() => {});
+            }
+          }}
+        >
           {/* Video Background */}
           <div className="absolute inset-0 z-0">
           <video
@@ -412,18 +419,6 @@ export default function Home() {
           </video>
           {/* Overlay to ensure text legibility */}
           <div className="absolute inset-0 bg-paper/45 pointer-events-none"></div>
-
-          {/* Botón invisible para iniciar el video en navegadores bloqueados */}
-          <button
-            className="absolute inset-0 w-full h-full opacity-0 cursor-default"
-            onClick={() => {
-              if (videoRef.current) {
-                videoRef.current.play().catch(() => {});
-              }
-            }}
-            aria-label="Reproducir Video"
-            tabIndex={-1}
-          />
         </div>
 
         <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">

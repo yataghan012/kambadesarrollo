@@ -186,6 +186,7 @@ export default function Home() {
 
   // Dynamic responsive video background loading to optimize bandwidth usage (prevents double-loading on mobile/desktop)
   const [videoSrc, setVideoSrc] = useState<"mobile" | "desktop" | null>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
     const checkViewport = () => {
@@ -200,6 +201,17 @@ export default function Home() {
     window.addEventListener("resize", checkViewport);
     return () => window.removeEventListener("resize", checkViewport);
   }, []);
+
+  // Ensure video autoplays safely on strict browsers
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.defaultMuted = true;
+      videoRef.current.muted = true;
+      videoRef.current.play().catch((err) => {
+        console.warn("Autoplay was blocked by the browser. Video will play upon interaction.", err);
+      });
+    }
+  }, [videoSrc]);
 
   // Open Lightbox
   const openLightbox = (index: number) => {
@@ -379,6 +391,7 @@ export default function Home() {
           {/* Video Background */}
           <div className="absolute inset-0 z-0">
           <video
+            ref={videoRef}
             key={videoSrc || "loading"}
             autoPlay
             loop
@@ -398,7 +411,19 @@ export default function Home() {
             )}
           </video>
           {/* Overlay to ensure text legibility */}
-          <div className="absolute inset-0 bg-paper/45"></div>
+          <div className="absolute inset-0 bg-paper/45 pointer-events-none"></div>
+
+          {/* Botón invisible para iniciar el video en navegadores bloqueados */}
+          <button
+            className="absolute inset-0 w-full h-full opacity-0 cursor-default"
+            onClick={() => {
+              if (videoRef.current) {
+                videoRef.current.play().catch(() => {});
+              }
+            }}
+            aria-label="Reproducir Video"
+            tabIndex={-1}
+          />
         </div>
 
         <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">

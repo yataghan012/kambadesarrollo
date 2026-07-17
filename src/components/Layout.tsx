@@ -211,8 +211,11 @@ export default function Layout() {
               <div className="space-y-4">
                 <div>
                   <span className="text-[10px] uppercase tracking-wider block opacity-50 mb-1">WhatsApp / Llamadas</span>
-                  <a onClick={() => trackWhatsAppClick('footer')} href={getWhatsAppLink("Hola! Vengo de la página web de Kamba Imports y quiero hacer una consulta.")} target="_blank" rel="noopener noreferrer" className="text-sm font-light hover:opacity-70 transition-opacity block font-mono underline underline-offset-4">
+                  <a onClick={() => trackWhatsAppClick('footer')} href={getWhatsAppLink("Hola! Vengo de la página web de Kamba Imports y quiero hacer una consulta.")} target="_blank" rel="noopener noreferrer" className="text-sm font-light hover:opacity-70 transition-opacity block font-mono underline underline-offset-4 mb-2">
                     +54 9 351 730-4725
+                  </a>
+                  <a href="mailto:consultas@kambaimports.com" className="text-sm font-light hover:opacity-70 transition-opacity block font-mono underline underline-offset-4">
+                    consultas@kambaimports.com
                   </a>
                 </div>
                 <div>

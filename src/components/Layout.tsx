@@ -1,17 +1,48 @@
 import { Outlet, Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ArrowUp } from "lucide-react";
 import { getWhatsAppLink } from "../config";
 import { trackPageview, trackWhatsAppClick } from "../lib/analytics";
 
 export default function Layout() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [showScrollToTop, setShowScrollToTop] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
     setIsMobileMenuOpen(false);
     trackPageview(location.pathname + location.search);
+    window.scrollTo(0, 0);
   }, [location]);
+
+  // Listen to scroll to toggle scroll-to-top button visibility when approaching the footer
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const totalHeight = document.documentElement.scrollHeight;
+      const viewportHeight = window.innerHeight;
+      const distanceToBottom = totalHeight - (viewportHeight + scrollY);
+
+      // Show button only when scrolled down at least 300px AND within 1000px of the bottom (approaching the footer)
+      if (scrollY > 300 && distanceToBottom < 1000) {
+        setShowScrollToTop(true);
+      } else {
+        setShowScrollToTop(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
 
   // Lock body scroll when mobile menu is open
   useEffect(() => {
@@ -250,6 +281,18 @@ export default function Layout() {
         >
           WhatsApp
         </a>
+
+        {/* Scroll To Top Button (Mobile Only) */}
+        <button
+          onClick={scrollToTop}
+          id="scroll-to-top-button"
+          className={`fixed bottom-6 left-6 bg-ink text-paper p-4 rounded-full shadow-lg hover:bg-accent hover:text-paper transition-all duration-300 z-50 md:hidden flex items-center justify-center active:scale-95 ${
+            showScrollToTop ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 translate-y-4 pointer-events-none"
+          }`}
+          aria-label="Volver arriba"
+        >
+          <ArrowUp size={18} />
+        </button>
     </div>
   );
 }

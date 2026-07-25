@@ -26,6 +26,7 @@ export default function HardwareMineria() {
                       "position": 1,
                       "item": {
                         "@type": "Product",
+                        "image": `${SITE_URL}/productos/pchardware.webp`,
                         "name": "NVIDIA RTX 4090 24GB ASUS ROG",
                         "offers": {
                           "@type": "Offer",
@@ -41,6 +42,7 @@ export default function HardwareMineria() {
                       "position": 2,
                       "item": {
                         "@type": "Product",
+                        "image": `${SITE_URL}/productos/pchardware.webp`,
                         "name": "AMD Ryzen 9 7950X3D",
                         "offers": {
                           "@type": "Offer",
@@ -96,7 +98,7 @@ export default function HardwareMineria() {
             <div className="aspect-square bg-gray-100 overflow-hidden flex items-center justify-center relative border border-ink/10">
               <img 
                 src="/productos/pchardware.webp" 
-                alt="Hardware & Minería" 
+                alt="Notebooks de alta gama y placas de video para minería compradas en Ciudad del Este" 
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 referrerPolicy="no-referrer"
               />
@@ -113,7 +115,7 @@ export default function HardwareMineria() {
             </p>
 
             <div className="border border-ink/10 bg-white/50 p-8 rounded-sm mb-12">
-              <h3 className="text-sm uppercase tracking-widest font-bold mb-4 italic">Precios de Referencia</h3>
+              <h2 className="text-sm uppercase tracking-widest font-bold mb-4 italic">Precios de Referencia</h2>
               <p className="font-light opacity-80 mb-4 text-sm">Para que te des una idea de lo que podés encontrar en hardware y equipos de minería originales en Ciudad del Este, precio:</p>
               <ul className="space-y-3">
                 <li className="flex justify-between items-baseline border-b border-ink/10 pb-2">

@@ -184,7 +184,7 @@ export default function LegalidadAduana() {
             <h2 className="text-2xl font-serif mb-8">Preguntas Frecuentes de Turistas</h2>
             <div className="space-y-8">
               <div>
-                <h2 className="text-sm uppercase tracking-widest font-bold mb-2 italic">¿Cuánto puedo traer sin pagar impuestos si voy como turista?</h2>
+                <h3 className="text-sm uppercase tracking-widest font-bold mb-2 italic">¿Cuánto puedo traer sin pagar impuestos si voy como turista?</h3>
                 <p className="font-light leading-relaxed opacity-80 mb-4">
                   El monto exacto de franquicia libre de impuestos vigente para cruces terrestres Argentina-Paraguay es de <strong className="font-normal opacity-100">USD 300 por pasajero mayor de edad</strong>, más 1 notebook o tablet, 1 celular, y ropa u objetos de uso personal sin fines comerciales. Este límite es mensual y no acumulable.
                 </p>
@@ -194,7 +194,7 @@ export default function LegalidadAduana() {
                 </p>
               </div>
               <div>
-                <h2 className="text-sm uppercase tracking-widest font-bold mb-2 italic">¿Qué pasa si la aduana retiene mi envío si voy como turista?</h2>
+                <h3 className="text-sm uppercase tracking-widest font-bold mb-2 italic">¿Qué pasa si la aduana retiene mi envío si voy como turista?</h3>
                 <p className="font-light leading-relaxed opacity-80">
                   Si la aduana de Iguazú retiene tu encomienda como turista, emitirán una citación formal mediante el Boletín Oficial para realizar la apertura del paquete en su sede y verificar si el contenido coincide con lo declarado o supera límites comerciales. Deberás hacer el seguimiento con Correo Argentino, presentar la factura de compra junto a tu DNI y, al no residir en Misiones, nombrar a un despachante local o apoderado para que asista presencialmente a la requisa. Dependiendo del resultado de la inspección, el paquete puede ser liberado, sujeto al pago de diferencias de impuestos o multas, o decomisado definitivamente si determinan que tiene un fin comercial oculto o viola el Código Aduanero.
                 </p>

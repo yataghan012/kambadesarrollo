@@ -26,6 +26,7 @@ export default function Relojes() {
                       "position": 1,
                       "item": {
                         "@type": "Product",
+                        "image": `${SITE_URL}/productos/relojgarminmayorista.jpg`,
                         "name": "Apple Watch S11 42MM GPS",
                         "offers": {
                           "@type": "Offer",
@@ -41,6 +42,7 @@ export default function Relojes() {
                       "position": 2,
                       "item": {
                         "@type": "Product",
+                        "image": `${SITE_URL}/productos/relojgarminmayorista.jpg`,
                         "name": "Garmin Forerunner 965",
                         "offers": {
                           "@type": "Offer",
@@ -56,6 +58,7 @@ export default function Relojes() {
                       "position": 3,
                       "item": {
                         "@type": "Product",
+                        "image": `${SITE_URL}/productos/relojgarminmayorista.jpg`,
                         "name": "Citizen Promaster Dive",
                         "offers": {
                           "@type": "Offer",
@@ -111,7 +114,7 @@ export default function Relojes() {
             <div className="aspect-square bg-gray-100 overflow-hidden flex items-center justify-center relative border border-ink/10">
               <img 
                 src="/productos/relojgarminmayorista.jpg" 
-                alt="Relojes" 
+                alt="Relojes originales Apple Watch y Garmin comprados en Ciudad del Este" 
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 referrerPolicy="no-referrer"
               />
@@ -128,7 +131,7 @@ export default function Relojes() {
             </p>
 
             <div className="border border-ink/10 bg-white/50 p-8 rounded-sm mb-12">
-              <h3 className="text-sm uppercase tracking-widest font-bold mb-4 italic">Precios de Referencia</h3>
+              <h2 className="text-sm uppercase tracking-widest font-bold mb-4 italic">Precios de Referencia</h2>
               <p className="font-light opacity-80 mb-4 text-sm">Para que te des una idea de lo que podés encontrar en relojes originales en Ciudad del Este, precio:</p>
               <ul className="space-y-3">
                 <li className="flex justify-between items-baseline border-b border-ink/10 pb-2">
@@ -148,7 +151,7 @@ export default function Relojes() {
               <p className="text-[10px] uppercase tracking-wider opacity-50 mt-2">*El precio por bulto es fijo.</p>
             </div>
 
-            <h3 className="text-xl font-serif mb-3">¿Por qué comprar conmigo?</h3>
+            <h2 className="text-xl font-serif mb-3">¿Por qué comprar conmigo?</h2>
             <p className="font-light leading-relaxed opacity-80 mb-10 text-sm">
               El mercado de relojes está lleno de réplicas de muy alta calidad. Yo no me arriesgo: compro exclusivamente en las joyerías y tech stores que figuran en las páginas oficiales de cada marca.
             </p>

@@ -103,7 +103,7 @@ export default function Productos() {
             <div className="aspect-[4/3] bg-gray-100 overflow-hidden flex items-center justify-center text-ink/40 text-xs mb-6 relative border border-ink/5">
               <img 
                 src="/productos/celularesmayorista.jpg" 
-                alt="Celulares y Notebooks" 
+                alt="Celulares y notebooks originales Apple y Samsung de Ciudad del Este" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 referrerPolicy="no-referrer"
               />
@@ -124,7 +124,7 @@ export default function Productos() {
             <div className="aspect-[4/3] bg-gray-100 overflow-hidden flex items-center justify-center text-ink/40 text-xs mb-6 relative border border-ink/5">
               <img 
                 src="/productos/relojgarminmayorista.jpg" 
-                alt="Relojes" 
+                alt="Relojes originales Apple Watch y Garmin comprados en Ciudad del Este" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 referrerPolicy="no-referrer"
               />
@@ -145,7 +145,7 @@ export default function Productos() {
             <div className="aspect-[4/3] bg-gray-100 overflow-hidden flex items-center justify-center text-ink/40 text-xs mb-6 relative border border-ink/5">
               <img 
                 src="/productos/ps5.jpg" 
-                alt="Consolas" 
+                alt="Consolas PlayStation, Nintendo y Xbox originales de Ciudad del Este" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 referrerPolicy="no-referrer"
               />
@@ -167,7 +167,7 @@ export default function Productos() {
               <img 
                 loading="lazy"
                 src="/productos/pchardware.webp" 
-                alt="Hardware & Minería" 
+                alt="Notebooks de alta gama y placas de video para minería compradas en Ciudad del Este" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 referrerPolicy="no-referrer"
               />
@@ -189,7 +189,7 @@ export default function Productos() {
               <img 
                 loading="lazy"
                 src="/productos/camarascanon.webp" 
-                alt="Cámaras Fotográficas" 
+                alt="Cámaras y lentes Sony, Canon y Nikon originales de Ciudad del Este" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 referrerPolicy="no-referrer"
               />
@@ -211,7 +211,7 @@ export default function Productos() {
               <img 
                 loading="lazy"
                 src="/productos/bebidas.webp" 
-                alt="Bebidas Premium" 
+                alt="Whiskies y bebidas premium importadas de Ciudad del Este" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 referrerPolicy="no-referrer"
               />

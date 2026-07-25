@@ -350,7 +350,7 @@ export default function Home() {
         "description": "Servicio de compras en Ciudad del Este, Paraguay, con envíos a toda Argentina.",
         "url": SITE_URL,
         "telephone": TELEPHONE_SCHEMA,
-        "priceRange": "$$$",
+        "priceRange": "USD 100 - USD 1500+",
         "sameAs": [
           "https://www.facebook.com/profile.php?id=61583082507604",
           "https://www.instagram.com/kambaimports/"
@@ -366,6 +366,27 @@ export default function Home() {
         },
         "description": "Servicio de compras personalizadas y logística desde Ciudad del Este hacia cualquier punto de Argentina.",
         "areaServed": "Argentina"
+      },
+      {
+        "@type": "Review",
+        "itemReviewed": { "@id": `${SITE_URL}/#business` },
+        "author": { "@type": "Person", "name": "Jose" },
+        "reviewBody": "\"Necesitaba un Motorola Signature para un regalo para mi hija y no quería arriesgarme a comprar por mi cuenta. Tomás, que era un local de CDE me lo consiguió, sellado y original, y me lo entregó antes de la fecha que habíamos hablado. Ya voy a repetir para otros equipos.\"",
+        "datePublished": "2026-07"
+      },
+      {
+        "@type": "Review",
+        "itemReviewed": { "@id": `${SITE_URL}/#business` },
+        "author": { "@type": "Person", "name": "Luis" },
+        "reviewBody": "\"Era la primera vez que trabajaba con Tomás, que vivia en Paraguay cuando le hice el pedido. Con tanto volumen pensé que algo se iba a perder o llegar roto, pero no faltó nada y todo vino en perfecto estado. Se ve que embalan bien antes de mandar. Soy mayorista de artículos para bebé: mordedores, cubiertos, kits de aseo y varias cosas más.\"",
+        "datePublished": "2026-07"
+      },
+      {
+        "@type": "Review",
+        "itemReviewed": { "@id": `${SITE_URL}/#business` },
+        "author": { "@type": "Person", "name": "Luciano" },
+        "reviewBody": "\"Lo llamé a Tomás para que me retire un pedido que tenia de perfumes árabes de ponto.com, valuada en 1300usd, en Ciudad del Este y que se encargue de mandarmelos hasta La Banda. Todo llegó puntual por Via Cargo sin un daño, el proceso fue claro, sin trabas ni cargos extra. 100% recomendable.\"",
+        "datePublished": "2026-07"
       }
     ]
   };

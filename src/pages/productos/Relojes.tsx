@@ -13,6 +13,32 @@ export default function Relojes() {
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Inicio",
+                "item": SITE_URL
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Productos",
+                "item": `${SITE_URL}/productos`
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Relojes",
+                "item": `${SITE_URL}/productos/relojes`
+              }
+            ]
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
             "@graph": [
               {
                 "@type": "CollectionPage",

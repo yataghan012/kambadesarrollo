@@ -13,6 +13,32 @@ export default function HardwareMineria() {
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Inicio",
+                "item": SITE_URL
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Productos",
+                "item": `${SITE_URL}/productos`
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Hardware & Minería",
+                "item": `${SITE_URL}/productos/hardware-mineria`
+              }
+            ]
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
             "@graph": [
               {
                 "@type": "CollectionPage",

@@ -387,6 +387,17 @@ export default function Home() {
         "author": { "@type": "Person", "name": "Luciano" },
         "reviewBody": "\"Lo llamé a Tomás para que me retire un pedido que tenia de perfumes árabes de ponto.com, valuada en 1300usd, en Ciudad del Este y que se encargue de mandarmelos hasta La Banda. Todo llegó puntual por Via Cargo sin un daño, el proceso fue claro, sin trabas ni cargos extra. 100% recomendable.\"",
         "datePublished": "2026-07"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": SITE_URL
+          }
+        ]
       }
     ]
   };

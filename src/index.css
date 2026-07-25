@@ -5,7 +5,7 @@
   src: url('/fonts/playfair-display-regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
-  font-display: swap;
+  font-display: optional;
 }
 
 @font-face {
@@ -13,7 +13,7 @@
   src: url('/fonts/playfair-display-italic.woff2') format('woff2');
   font-weight: 400;
   font-style: italic;
-  font-display: swap;
+  font-display: optional;
 }
 
 @font-face {
@@ -21,7 +21,7 @@
   src: url('/fonts/playfair-display-700.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
-  font-display: swap;
+  font-display: optional;
 }
 
 @font-face {

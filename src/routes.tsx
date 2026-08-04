@@ -11,6 +11,7 @@ import Bebidas from "./pages/productos/Bebidas";
 import Consolas from "./pages/productos/Consolas";
 import LegalidadAduana from "./pages/LegalidadAduana";
 import QuienEstaDetras from "./pages/QuienEstaDetras";
+import NotFound from "./pages/NotFound";
 
 export const routes: RouteObject[] = [
   {
@@ -28,6 +29,7 @@ export const routes: RouteObject[] = [
       { path: "productos/consolas", element: <Consolas /> },
       { path: "legalidad-y-aduana", element: <LegalidadAduana /> },
       { path: "quien-esta-detras", element: <QuienEstaDetras /> },
+      { path: "*", element: <NotFound /> },
     ],
   },
 ];

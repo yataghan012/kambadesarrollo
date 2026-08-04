@@ -7,6 +7,11 @@ import { SITE_URL } from './src/config';
 
 export default defineConfig(() => {
   return {
+    ssgOptions: {
+      includedRoutes(paths) {
+        return paths.includes('/404') ? paths : [...paths, '/404'];
+      }
+    },
     plugins: [
       react(), 
       tailwindcss(),
